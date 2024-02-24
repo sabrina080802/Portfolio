@@ -58,13 +58,13 @@ h1{
   margin: 0 1.5em;
   font-weight: normal;
 }
-.Header > a[aria-active]{
+.Header > a[aria-active=true]{
   color: var(--mainColor);
 }
 .Header > a:first-of-type{
   margin-left: 1em;
 }
-.ContactMe{
+.go-contact, .contact-active{
   color: rgba(51, 65, 85);
   border-radius: 17px;
   border: 1px solid rgba(100, 116, 138);
@@ -76,12 +76,11 @@ h1{
   opacity: .5;
   transition: border-color .15s ease-out, color .15s ease-out, opacity .15s ease-out;
 }
-.ContactMe:hover {
+.go-contact:hover, .contact-active {
   border-color: var(--mainColor);
   color: var(--mainColor);
   opacity: 1;
 }
-
 .index-img{
   border-radius: 2.5em;       
   width: 9.375em;
@@ -242,7 +241,32 @@ section h4{
   border-radius: 1em;
   margin-bottom: .5em;
 }
-
+.footer{
+  text-align: center;
+  color: var(--mainColor50);
+}
+.contact-form{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact-form input, .contact-form textarea{
+  border: 1px solid var(--mainColor50);
+  background-color: rgba(255,255,255,.5);
+  padding: .5em;
+  font-weight: light;
+  transition: box-shadow .35s ease-out, border .35s ease-out;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+  color: rgba(0,0,0,.25);
+  font-weight: 250;
+}
+.contact-form button{
+  display: block;
+  padding: .5em 3em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
 @media screen and (max-width:1000px){
   .identity{
     position: initial;
