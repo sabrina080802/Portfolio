@@ -277,6 +277,16 @@ section h3{
 .section-container .tags{
   min-width: 100%;
   color: var(--mainColor);
+  margin-bottom: .5em;
+}
+.section-container .tags span{
+  border-radius: .5em;
+  margin: .25em;
+  color: var(--mainColor);
+  cursor: pointer;
+  background-color: var(--whiteBg);
+  padding: .25em .5em;
+  font-size: .9em;
 }
 .section-container h4{
   min-width: 100%;
@@ -329,7 +339,41 @@ footer{
   margin: 0 auto;
   margin-bottom: 1em;
 }
-
+.mosaic{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.mosaic h3{
+  min-width: 100%;
+}
+.mosaic .section-container{
+  flex: 1;
+  min-width: 30%;
+  margin: .5em;
+  max-width: 700px;
+}
+.mosaic .tag-list{
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: .75em 0;
+}
+.mosaic .tag-list button{
+  border-radius: .5em;
+  margin: .25em;
+  color: var(--mainColor);
+  cursor: pointer;
+  background-color: var(--whiteBg);
+  padding: .25em .5em;
+  font-size: .9em;
+  transition: background-color .25s ease-out, color .25s ease-out;
+}
+.mosaic .tag-list button[aria-active=true]{
+  color: white;
+  background-color: var(--mainColor);
+}
 
 @media screen and (max-width:1000px){
   .identity{

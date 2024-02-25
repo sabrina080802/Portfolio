@@ -4,6 +4,7 @@ import Image from "next/image";
 import RootLayout from "./layout";
 import Footer from "@/components/footer";
 import Identity from "@/components/identity";
+import Project from "@/components/project"
 import "./styles/globals.css"; 
 
 export default function Home() {
@@ -48,26 +49,14 @@ export default function Home() {
             <article>
               <h3>Mes projets préférés</h3>
               <p>J'adore être expérimentée ! J'irais même jusqu'à dire que c'est une des principales qualité de l'homme.</p>
-              <div className="section-container">
-                <div className="img-container relative">
-                  <img src={"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"}/>
-                </div>
-                <div className="tags">Web Application PC</div>
-                <h4>La cathédrale de Strasbourg</h4>
-                <p>Croyez le ou non mais c'est bel et bien moi qui ait construit ce fameux édifice. Quel accomplissement !</p>
-                <div className="align-right">
-                  <button className="btn-type-more">Découvrir -></button>
-                </div>
-              </div>
+              <Project name="La jolie cathédrale" tags={["C#", "JS"]} description="Croyez le ou non mais c'est bel et bien moi qui ait construit ce fameux édifice. Quel accomplissement !"/>
 
               <button className="btn-type-1">Découvrir la suite -></button>
             </article>
-
             <Footer/>
           </div>
         </section>
       </RootLayout>
     </>
   );
-
 }
