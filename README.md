@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio de Sabrina
 
-## Getting Started
+Ce portfolio a été développé avec [Next.js](https://nextjs.org/), un framework React, pour mettre en avant mes projets personnels et professionnels en tant qu'étudiante en informatique.
 
-First, run the development server:
+## Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Navigation fluide** : Utilise les routes dynamiques de Next.js pour une expérience utilisateur améliorée.
+- **Responsive Design** : S'adapte à toutes les tailles d'écran grâce à des techniques CSS modernes.
+- **SEO Optimisé** : Utilisation des pratiques recommandées par Next.js pour améliorer la visibilité sur les moteurs de recherche.
+- **Chargement d'image optimisé** : Utilisation de l'élément `Image` de Next.js pour un chargement rapide et efficace des images.
+- **Thème sombre et clair** : Permet aux utilisateurs de choisir entre un thème sombre et clair, améliorant l'accessibilité et l'expérience utilisateur.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Utilisées
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **[Next.js](https://nextjs.org/)** : Un framework React pour la production.
+- **[React](https://reactjs.org/)** : Une bibliothèque JavaScript pour construire des interfaces utilisateur.
+- **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** : Langage de programmation utilisé pour les scripts côté client.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Image de présentation 
 
-## Learn More
+<img width="1440" alt="Capture d’écran 2024-02-25 à 04 08 37" src="https://github.com/sabrina080802/Portfolio/assets/84008637/0d4d627d-1969-40da-a93f-a9fea1cddbc6">
+<img width="1440" alt="Capture d’écran 2024-02-25 à 04 08 52" src="https://github.com/sabrina080802/Portfolio/assets/84008637/635875da-67ce-4529-9f41-a93b8a6b9533">
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
