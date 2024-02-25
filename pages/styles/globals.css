@@ -54,16 +54,78 @@ h1{
   font-weight: 600;
   color: rgba(51, 65, 85);
 }
+.Header a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 .5em;
+  font-weight: normal;
+  transition: opacity .25s ease-out, margin .25s ease-out, max-width .25s ease-out;
+}
 .Header > a{
   margin: 0 1.5em;
-  font-weight: normal;
 }
-.Header > a[aria-active=true]{
+.Header a::before{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  content: '';
+  border-bottom: 1px solid var(--mainColor);
+  transition: width .25s ease-out;
+}
+.Header a[aria-active=true]{
   color: var(--mainColor);
 }
-.Header > a:first-of-type{
+.Header a:first-of-type{
   margin-left: 1em;
 }
+.Header a:hover .sub-menu{
+  max-width: 400px;
+  transition: max-width .75s ease-out, opacity .5s .25s ease-out, margin-left .75s ease-out;
+}
+.Header a:hover .sub-menu::before{
+  height: 100%;
+}
+.Header a:not([aria-disable-hover]):hover::before{
+  width: 100%;
+}
+.Header a:not(:hover) .sub-menu{
+  opacity: 0;
+  max-width: 0;
+  height: 0;
+  margin: 0;
+}
+.sub-menu {
+  position: relative;
+  display: flex;
+  font-size: .9em;
+  color: var(--mainColor);
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: .75em;
+  transition: max-width .75s ease-out, opacity .5s ease-out, margin-left .75s ease-out;
+}
+.sub-menu::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  border-left: 1px solid var(--mainColor);
+  transition: height .35s .5s ease-out;
+}
+.sub-menu > a{
+  margin: 0 .25em;
+  font-size: .95em;
+}
+.sub-menu > a:not(:last-of-type)::after{
+  content: '|';
+  font-size: .65em;
+  margin-left: .5em;
+}
+
 .go-contact, .contact-active{
   color: rgba(51, 65, 85);
   border-radius: 17px;
@@ -241,7 +303,7 @@ section h4{
   border-radius: 1em;
   margin-bottom: .5em;
 }
-.footer{
+footer{
   text-align: center;
   color: var(--mainColor50);
 }
@@ -267,6 +329,8 @@ section h4{
   margin: 0 auto;
   margin-bottom: 1em;
 }
+
+
 @media screen and (max-width:1000px){
   .identity{
     position: initial;

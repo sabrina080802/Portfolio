@@ -1,6 +1,5 @@
 import RootLayout from "./layout";
 
-import Header from "@/components/header";
 import Contact from '@/components/contact';
 import Footer from "@/components/footer";
 import Identity from "@/components/identity";
@@ -17,7 +16,6 @@ export default function ContactMe() {
   return (
     <>
       <RootLayout>
-        <Header />
         <section>
           <Identity/>
           <div className="about-me">

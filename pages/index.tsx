@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import RootLayout from "./layout";
-import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Identity from "@/components/identity";
 import "./styles/globals.css"; 
@@ -11,8 +10,6 @@ export default function Home() {
   return (
     <>
       <RootLayout>
-        <Header/>
-
         <section className="border">
           <Identity/>
 

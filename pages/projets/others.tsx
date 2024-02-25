@@ -1,16 +1,14 @@
-import RootLayout from "./layout";
+import RootLayout from "./../layout";
 
 import Footer from "@/components/footer";
 import Identity from "@/components/identity";
 
-export default function Projets() {
+export default function OtherProjects() {
   return (
     <>
       <RootLayout>
         <section>
-          <div className="mosaic">
-            PROJETS
-          </div>
+          <h2>AUTRES PROJETS</h2>
           <Footer />
         </section>
       </RootLayout>
