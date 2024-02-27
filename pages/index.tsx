@@ -53,7 +53,7 @@ export default function Home() {
                 name="La jeu" 
                 tags={["PHP","C#", "JavaScript","HTML", "Projet personnel" ,"CSS"]} 
                 description="Site web qui permet de réunir les fans de jeu video afin de se lancer des tournois ensemble"
-                image="/photo/LeJeu.png"
+                image="/photo/LeJeu.webp"
               />
               <Link className="btn-type-1" href={"/projets"}>Découvrir la suite -></Link>
             </article>
