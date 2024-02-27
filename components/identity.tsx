@@ -16,11 +16,14 @@ export default function Identity(){
           <h1>Sabrina Al Hammuti</h1>
           <p>Étudiante en informatique de 21 ans.</p>
           <p>
-            Il me faut une petite phrase de présentation
-            <br />
-            qui respire la <span>qualité</span> que je placerai juste ici afin
-            <br />
-            d'avoir un vrai site de filou.
+            Plongez dans le monde de l'informatique
+            <br />à travers mon regard :{" "}
+            <b>un espace où l'impossible devient réalité.</b>
+          </p>
+          <p>Ce portfolio est une fenêtre sur ma passion,
+            <br /> un lieu où le code rencontre la créativité
+            <br />et où ma détermination transforme<br />
+            les idées en projets concrets et captivants.
           </p>
           <SocialNetworks />
         </div>

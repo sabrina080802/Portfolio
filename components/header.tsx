@@ -28,7 +28,22 @@ export default function Header(){
                 <Link onClick={handleMenuClick} href={"/projets/others"}>Autres Projets</Link>
               </div>
             </Link>
-            <Link onClick={handleMenuClick} href={"/experiences"} aria-active={router.pathname === '/experiences'}>Expériences</Link>
+            <Link onClick={handleMenuClick} href={"/experiences"} aria-active={router.pathname === '/experiences'} aria-disable-hover>
+            Expériences
+            <div className="sub-menu">
+                <Link onClick={handleMenuClick} href={"/experiences/CV"}>CV</Link>
+                <Link onClick={handleMenuClick} href={"/experiences/Stages"}>Stages</Link>
+              </div>
+            </Link>
+            <Link onClick={handleMenuClick} href={"/Cned"} aria-active={router.pathname === '/Cned'} aria-disable-hover>
+              Cned
+              <div className="sub-menu">
+                <Link onClick={handleMenuClick} href={"/Cned/E4"}>Épreuve E4</Link>
+                <Link onClick={handleMenuClick} href={"/Cned/VeilleTechnologique"}>Veille Technologique</Link>
+                <Link onClick={handleMenuClick} href={"/Cned/Tableau"}>Compétences</Link>
+
+              </div>
+            </Link>
           </nav>
           <Link onClick={handleMenuClick} href={"/contact-me"} className={router.pathname === '/contact-me' ? 'contact-active' : 'go-contact'}>
             Me contacter

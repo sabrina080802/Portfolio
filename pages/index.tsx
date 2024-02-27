@@ -17,17 +17,17 @@ export default function Home() {
           <div className="about-me">
             <article>
               <h2>Bonjour !</h2>
-              <p>Je vous accueille chaleureusement sur ce petit<br/>site pour me présenter.</p>
-              <p>J'adore la lecture, les séries Netflix, le cinéma, les<br/>bons restaurants, mais avant tout l'informatique !</p>
-              <div className="grid grid-cols-2 gap-4">
-                <button className="btn">Me contacter -></button>
-                <button className="btn-type-1">Découvrir mes projets</button>
+              <p>Ce portfolio incarne un voyage de 4 ans en informatique, marqué par la persévérance et enrichi de créativité ainsi que la passion. </p>
+              <p>À chaque projet, un nouveau défi à surmonter, une nouvelle histoire à écrire</p>
+              <div className="grid grid-cols-2">
+                <Link className="btn"  href={"/contact-me"} >Me contacter -></Link>
+                <Link className="btn-type-1" href={"/projets"}>Découvrir mes projets</Link>
               </div>
             </article>
             
             <article>
               <h3>Mes expériences</h3>
-              <p>J'adore être expérimentées ! J'irais même jusqu'à dire que<br/>c'est une des principales qualité de l'homme.</p>
+              <p>Découvrez mon parcours, où chaque expérience scolaire et professionnelle m'ont forger ma passion pour l'informatique.</p>
               <div className="section-container">
                 <div className="icon-container">
                   <img
@@ -43,15 +43,19 @@ export default function Home() {
                 <div className="date">2022-2024</div>
               </div>
 
-              <button className="btn-type-1">Découvrir la suite -></button>
+              <Link className="btn-type-1" href={"/experiences"}>Découvrir la suite -></Link>
             </article>
 
             <article>
               <h3>Mes projets préférés</h3>
-              <p>J'adore être expérimentée ! J'irais même jusqu'à dire que c'est une des principales qualité de l'homme.</p>
-              <Project name="La jolie cathédrale" tags={["C#", "JS"]} description="Croyez le ou non mais c'est bel et bien moi qui ait construit ce fameux édifice. Quel accomplissement !"/>
-
-              <button className="btn-type-1">Découvrir la suite -></button>
+              <p>Voici un projet qui me tient à cœur. N'hésitez pas à découvrir aussi mes autres travaux.</p>
+              <Project 
+                name="La jeu" 
+                tags={["PHP","C#", "JavaScript","HTML", "Projet personnel" ,"CSS"]} 
+                description="Site web qui permet de réunir les fans de jeu video afin de se lancer des tournois ensemble"
+                image="/photo/LeJeu.png"
+              />
+              <Link className="btn-type-1" href={"/projets"}>Découvrir la suite -></Link>
             </article>
             <Footer/>
           </div>

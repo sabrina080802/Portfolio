@@ -4,26 +4,23 @@ import React, { useState } from 'react';
 
 import Footer from "@/components/footer";
 import Identity from "@/components/identity";
-import Project from "@/components/project";
+import ProjectTest from "@/components/project-filter";
+import Project, {ProjectInfo} from "@/components/project";
 
 import projects from "@/public/projects.json";
 
-type Project = {
-  name :string,
-  description :string,
-  tags :Array<string>,
-  git :string
-};
 type ProjectFilter = {
-  tagName :string;
-  projects :Array<Project>;
-  enabled :boolean;
-}
+  tagName: string;
+  projects: Array<ProjectInfo>;
+  enabled: boolean;
+};
 
 export default function Projets() {
   const [projectList, setProjectList] = useState(projects);
   const [tagList, setTagList] = useState<ProjectFilter[]>([]);
   const [enabledTags, setEnabledTags] = useState<ProjectFilter[]>([]);
+  const pTest = new ProjectTest();
+  console.log(pTest);
 
   React.useEffect(() => {
     const newTagList: ProjectFilter[] = [];
@@ -79,14 +76,13 @@ export default function Projets() {
     <>
       <RootLayout>
         <section>
+          <h2>Tous les projet</h2>
           <div className="mosaic">
             <div className="tag-list">
               <button
                 onClick={clearFilters}
                 aria-active={enabledTags.length == 0}
-              >
-                Tous
-              </button>
+              >Tous</button>
               {tagList.map((tag) => (
                 <button
                   onClick={filterByTag}
@@ -101,6 +97,7 @@ export default function Projets() {
                 name={proj.name}
                 tags={proj.tags}
                 description={proj.description}
+                image={proj.image}
               />
             ))}
           </div>

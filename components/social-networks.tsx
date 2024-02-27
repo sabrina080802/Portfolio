@@ -5,10 +5,10 @@ export default function SocialNetworks() {
   return (
     <>
       <div className="social-networks">
-        <Link href={""}>
+        <Link href={"mailto:sabrina.alhammuti@hotmail.com"}>
           <Image src={"/photo/mail.svg"} width={30} height={30} alt={"Email"} />
         </Link>
-        <Link href={""}>
+        <Link href={"https://www.linkedin.com/in/sabrina-al-hammuti-1441632b7/"}>
           <Image
             src={"/photo/linkedin.svg"}
             width={30}
@@ -16,7 +16,7 @@ export default function SocialNetworks() {
             alt={"Linkedin"}
           />
         </Link>
-        <Link href={""}>
+        <Link href={"https://github.com/sabrina080802"}>
           <Image
             src={"/photo/github.svg"}
             width={30}

@@ -2,15 +2,17 @@
 export type ProjectInfo = {
     name :string,
     tags :Array<string>,
-    description :string
+    description :string,
+    image :string
 };
 
 export default function Project(infos:ProjectInfo){
+    console.log(infos);
     return (
         <>
             <div className="section-container">
                 <div className="img-container relative">
-                    <img src={"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"}/>
+                    <img src={infos.image}/>
                 </div>
                 <div className="tags">
                     {infos.tags.map((element, index) => (
