@@ -7,7 +7,7 @@ export default function E4() {
   return (
     <>
       <RootLayout>
-      <h2 className='title'>E4</h2>
+      <h2 className='title'> Epreuve E4</h2>
       <section className="border">
       <Footer />
       </section>
