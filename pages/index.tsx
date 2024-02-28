@@ -20,7 +20,7 @@ export default function Home() {
               <p>Ce portfolio incarne un voyage de 4 ans en informatique, marqué par la persévérance et enrichi de créativité ainsi que la passion. </p>
               <p>À chaque projet, un nouveau défi à surmonter, une nouvelle histoire à écrire</p>
               <div className="grid grid-cols-2">
-                <Link className="btn"  href={"/contact-me"} >Me contacter -></Link>
+                <Link className="btn"  href={"/contact-me"} >Me contacter -> </Link>
                 <Link className="btn-type-1" href={"/projets"}>Découvrir mes projets</Link>
               </div>
             </article>

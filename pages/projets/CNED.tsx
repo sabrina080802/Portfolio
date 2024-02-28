@@ -50,20 +50,45 @@ export default function ProjetCNED() {
 
   function filterByTag(event: React.MouseEvent<HTMLButtonElement>) {
     const tagName = event.currentTarget.innerText;
-    const updatedTagList = tagList.map((t) =>
-      t.tagName === tagName ? { ...t, enabled: !t.enabled } : t
-    );
+    const isCnedTag = tagName === "CNED"; // Vérifie si le tag cliqué est "CNED"
+    let updatedTagList;
+
+    if (isCnedTag) {
+      const cnedTagStatus = tagList.find((t) => t.tagName === "CNED")?.enabled;
+      updatedTagList = tagList.map(
+        (t) =>
+          t.tagName === "CNED"
+            ? { ...t, enabled: !cnedTagStatus }
+            : { ...t, enabled: false } // Active ou désactive le tag "CNED", désactive tous les autres
+      );
+    } else {
+      updatedTagList = tagList.map((t) =>
+        t.tagName === tagName ? { ...t, enabled: !t.enabled } : t
+      );
+    }
 
     setTagList(updatedTagList);
 
     const newEnabledTags = updatedTagList.filter((t) => t.enabled);
-    if (newEnabledTags.length === 0) {
-      setProjectList(projects);
+    let filteredProjects;
+
+    if (
+      newEnabledTags.length === 0 ||
+      (isCnedTag && !newEnabledTags.find((t) => t.tagName === "CNED")?.enabled)
+    ) {
+      filteredProjects = isCnedTag
+        ? projects.filter((proj) => proj.tags.includes("CNED"))
+        : projects;
     } else {
-      const filteredProjects = newEnabledTags.flatMap((t) => t.projects);
-      setProjectList(filteredProjects);
+      filteredProjects = newEnabledTags.flatMap((t) => t.projects);
     }
 
+    filteredProjects = filteredProjects.filter(
+      (project, index, self) =>
+        index === self.findIndex((p) => p.name === project.name)
+    );
+
+    setProjectList(filteredProjects);
     setEnabledTags(newEnabledTags);
   }
   function clearFilters() {
@@ -72,6 +97,21 @@ export default function ProjetCNED() {
     setTagList(updatedTagList);
     setEnabledTags(updatedTagList.filter((t) => t.enabled));
   }
+  React.useEffect(() => {
+    const cnedProjects = projects.filter((proj) => proj.tags.includes("CNED"));
+
+    const cnedTags = new Set(cnedProjects.flatMap((proj) => proj.tags));
+
+    cnedTags.add("CNED");
+
+    const newTagList = Array.from(cnedTags).map((tag) => ({
+      tagName: tag,
+      projects: cnedProjects.filter((proj) => proj.tags.includes(tag)),
+      enabled: false,
+    }));
+
+    setTagList(newTagList);
+  }, [projects]);
 
   return (
     <>
