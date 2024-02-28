@@ -1,11 +1,11 @@
 import RootLayout from "./layout";
 import { MouseEventHandler } from "react";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 import Footer from "@/components/footer";
 import Identity from "@/components/identity";
 import ProjectTest from "@/components/project-filter";
-import Project, {ProjectInfo} from "@/components/project";
+import Project, { ProjectInfo } from "@/components/project";
 
 import projects from "@/public/projects.json";
 
@@ -20,7 +20,6 @@ export default function Projets() {
   const [tagList, setTagList] = useState<ProjectFilter[]>([]);
   const [enabledTags, setEnabledTags] = useState<ProjectFilter[]>([]);
   const pTest = new ProjectTest();
-  console.log(pTest);
 
   React.useEffect(() => {
     const newTagList: ProjectFilter[] = [];
@@ -62,7 +61,7 @@ export default function Projets() {
 
     setEnabledTags(newEnabledTags);
   }
-  function clearFilters(){
+  function clearFilters() {
     const updatedTagList = tagList.map((t) => {
       return { ...t, enabled: false };
     });
@@ -70,7 +69,6 @@ export default function Projets() {
     setProjectList(projects);
     setEnabledTags(updatedTagList.filter((t) => t.enabled));
   }
-
 
   return (
     <>
@@ -81,12 +79,14 @@ export default function Projets() {
             <div className="tag-list">
               <button
                 onClick={clearFilters}
-                aria-active={enabledTags.length == 0}
-              >Tous</button>
+                className={enabledTags.length == 0 ? "active" : ""}
+              >
+                Tous
+              </button>
               {tagList.map((tag) => (
                 <button
                   onClick={filterByTag}
-                  aria-active={enabledTags.indexOf(tag) !== -1}
+                  className={enabledTags.indexOf(tag) !== -1 ? "active" : ""}
                 >
                   {tag.tagName}
                 </button>
@@ -98,10 +98,10 @@ export default function Projets() {
                 tags={proj.tags}
                 description={proj.description}
                 image={proj.image}
+                pageLink={proj.pageLink}
               />
             ))}
           </div>
-          <Footer />
         </section>
       </RootLayout>
     </>

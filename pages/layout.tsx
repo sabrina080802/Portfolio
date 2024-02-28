@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
+
 import "./styles/globals.css";
 
 export default function RootLayout({
-children }: Readonly<{
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -16,6 +19,7 @@ children }: Readonly<{
       <main>
         <Header />
         {children}
+        <Footer />
       </main>
     </>
   );

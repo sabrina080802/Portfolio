@@ -54,10 +54,10 @@ export default function Home() {
                 tags={["PHP","C#", "JavaScript","HTML", "Projet personnel" ,"CSS"]} 
                 description="Site web qui permet de réunir les fans de jeu video afin de se lancer des tournois ensemble"
                 image="/photo/LeJeu.webp"
+                pageLink="/PageProjet/Lejeu"
               />
               <Link className="btn-type-1" href={"/projets"}>Découvrir la suite -></Link>
             </article>
-            <Footer/>
           </div>
         </section>
       </RootLayout>

@@ -16,20 +16,16 @@ type ProjectFilter = {
 };
 
 export default function OtherProjects() {
+  const otherProjects = projects.filter((x) => !x.tags.includes("CNED"));
   const [projectList, setProjectList] = useState(projects);
   const [tagList, setTagList] = useState<ProjectFilter[]>([]);
   const [enabledTags, setEnabledTags] = useState<ProjectFilter[]>([]);
-  const pTest = new ProjectTest();
-  console.log(pTest);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const newTagList: ProjectFilter[] = [];
-    const excludedTag = "CNED";
 
-    projects.forEach((proj) => {
-      const filteredTags = proj.tags.filter((tag) => tag !== excludedTag);
-
-      filteredTags.forEach((tag) => {
+    otherProjects.forEach((proj, index) => {
+      proj.tags.forEach((tag) => {
         const existingTag = newTagList.find((t) => t.tagName === tag);
 
         if (existingTag) {
@@ -43,7 +39,10 @@ export default function OtherProjects() {
         }
       });
     });
-    setTagList(newTagList.filter((tag) => tag.tagName !== excludedTag));
+
+    setTagList(newTagList);
+    setProjectList(otherProjects);
+    setEnabledTags([]);
   }, []);
 
   function filterByTag(event: React.MouseEvent<HTMLButtonElement>) {
@@ -55,31 +54,24 @@ export default function OtherProjects() {
     setTagList(updatedTagList);
 
     const newEnabledTags = updatedTagList.filter((t) => t.enabled);
-    if (newEnabledTags.length === 0) {
-      setProjectList(projects.filter((proj) => !proj.tags.includes("CNED")));
-    } else {
-      let filteredProjects = newEnabledTags.flatMap((t) => t.projects);
-      filteredProjects = filteredProjects.filter(
-        (project, index, self) =>
-          index === self.findIndex((p) => p.name === project.name)
-      );
-      setProjectList(filteredProjects);
+    const filteredProjects = newEnabledTags.flatMap((t) => t.projects);
+    for (let i = 0; i < filteredProjects.length; i++) {
+      for (let j = i + 1; j < filteredProjects.length; j++) {
+        if (filteredProjects[i] == filteredProjects[j]) {
+          filteredProjects.splice(j--, 1);
+        }
+      }
     }
+    setProjectList(filteredProjects);
     setEnabledTags(newEnabledTags);
   }
-
   function clearFilters() {
-    const updatedTagList = tagList.map((t) => ({ ...t, enabled: false }));
+    const updatedTagList = tagList.map((t) => {
+      return { ...t, enabled: false };
+    });
     setTagList(updatedTagList);
-    let resetProjectList = projects.filter(
-      (proj) => !proj.tags.includes("CNED")
-    );
-    resetProjectList = resetProjectList.filter(
-      (project, index, self) =>
-        index === self.findIndex((p) => p.name === project.name)
-    );
-    setProjectList(resetProjectList);
-    setEnabledTags([]);
+    setProjectList(otherProjects);
+    setEnabledTags(updatedTagList.filter((t) => t.enabled));
   }
 
   return (
@@ -88,22 +80,6 @@ export default function OtherProjects() {
         <section>
           <h2>Autres projets</h2>
           <div className="mosaic">
-            <div className="tag-list">
-              <button
-                onClick={clearFilters}
-                aria-active={enabledTags.length == 0}
-              >
-                Tous
-              </button>
-              {tagList.map((tag) => (
-                <button
-                  onClick={filterByTag}
-                  aria-active={enabledTags.includes(tag)}
-                >
-                  {tag.tagName}
-                </button>
-              ))}
-            </div>
             {projectList.map((proj) => (
               <Project
                 key={proj.name}
@@ -111,10 +87,10 @@ export default function OtherProjects() {
                 tags={proj.tags}
                 description={proj.description}
                 image={proj.image}
+                pageLink={proj.pageLink}
               />
             ))}
           </div>
-          <Footer />
         </section>
       </RootLayout>
     </>

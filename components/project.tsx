@@ -1,13 +1,14 @@
+import Link from "next/link";
 
 export type ProjectInfo = {
     name :string,
     tags :Array<string>,
     description :string,
-    image :string
+    image :string,
+    pageLink: string
 };
 
 export default function Project(infos:ProjectInfo){
-    console.log(infos);
     return (
         <>
             <div className="section-container">
@@ -22,7 +23,11 @@ export default function Project(infos:ProjectInfo){
                 <h4>{infos.name}</h4>
                 <p>{infos.description}</p>
                 <div className="align-right">
-                    <button className="btn-type-more">Découvrir -></button>
+                        <button
+                        className="btn-type-more"
+                        onClick={() => window.location.href = infos.pageLink} 
+                        >Découvrir ->
+                        </button>
                 </div>
             </div>
         </>

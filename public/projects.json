@@ -4,61 +4,78 @@
     "description": "Nuage de mots des thèmes majeurs, les idées dominantes, dans les messages de vœux de Nouvel An adressés aux Français par les présidents de la République chaque année.",
     "tags": ["C#", "HTML", "CSS", "IUT"],
     "git": "https://github.com/sabrina080802/Policloud",
-    "image": "/photo/NuageDeMots.png"
+    "image": "/photo/NuageDeMots.png",
+    "pageLink": "/PageProjet/Policloud"
   },
   {
     "name": "MediatekFormation",
     "description": "Site de formation en informatique, avec une gestion de l'administation",
-    "tags": ["PHP" ,"CSS", "CNED","TWING"],
+    "tags": ["PHP", "CSS", "CNED", "TWING"],
     "git": "https://github.com/sabrina080802/cnedProjet1",
-    "image": "/photo/github.svg"
+    "image": "/photo/github.svg",
+    "pageLink": "/PageProjet/MediatekFormation.tsx"
   },
   {
     "name": "Le Jeu",
     "description": "Site web qui permet de réunir les fans de jeu video afin de se lancer des tournois ensemble",
-    "tags": ["PHP","C#", "JavaScript","HTML", "Projet personnel" ,"CSS"],
+    "tags": ["PHP", "C#", "JavaScript", "HTML", "Projet personnel", "CSS"],
     "git": "https://github.com/sabrina080802/jeu",
-    "image": "/photo/LeJeu.webp"
+    "image": "/photo/LeJeu.webp",
+    "pageLink": "/PageProjet/Lejeu.tsx"
   },
   {
     "name": "Installation d'un poste pour développement",
     "description": "Projet scolaire qui demander l'installation d'une VM",
-    "tags": ["OS","DEBIAN", "IUT"],
-    "image": "/photo/debian.jpeg"
+    "tags": ["OS", "DEBIAN", "IUT"],
+    "image": "/photo/debian.jpeg",
+    "pageLink": "/PageProjet/Debian.tsx"
   },
   {
     "name": "ProbPotes",
     "description": "Application Créez des événements, ajoutez des dépenses, indiquez qui a payé et pour qui, puis générez des rapports pour savoir qui doit quoi à qui.",
     "tags": ["C#", ".NET", "IUT"],
     "git": "https://github.com/FranckG28/ProbPotes",
-    "image": "/photo/ProbPotes.webp"
+    "image": "/photo/ProbPotes.webp",
+    "pageLink": "/PageProjet/Probpotes.tsx"
   },
   {
     "name": "Espard",
     "description": "Application  d'apprentissage de l'espagnol",
     "tags": ["C#", ".NET", "IUT"],
     "git": "https://github.com",
-    "image": "/photo/Espagnol.webp"
+    "image": "/photo/Espagnol.webp",
+    "pageLink": "/PageProjet/Espard.tsx"
   },
   {
     "name": "Sabrina",
     "description": "Mon site qui permet de montrer mes projets, mon expérience",
-    "tags": ["NextJS", "React", "Projet personnel", "CNED","TypeScript", "JavaScript","CSS"],
+    "tags": [
+      "NextJS",
+      "React",
+      "Projet personnel",
+      "CNED",
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
     "git": "https://github.com/sabrina080802/Portfolio",
-    "image": "/photo/Sabrina.png"
+    "image": "/photo/Sabrina.png",
+    "pageLink": "/PageProjet/Sabrina.tsx"
   },
   {
     "name": "Fourmis",
     "description": "",
     "tags": ["Java", "IUT"],
     "git": "https://github.com",
-    "image": "/photo/Java.png"
+    "image": "/photo/Java.png",
+    "pageLink": "/PageProjet/Fourmis.tsx"
   },
   {
     "name": "Ping-Pong",
     "description": "",
     "tags": ["Java", "IUT"],
     "git": "https://github.com",
-    "image": "/photo/PingPong.webp"
+    "image": "/photo/PingPong.webp",
+    "pageLink": "/PageProjet/PingPong.tsx"
   }
 ]

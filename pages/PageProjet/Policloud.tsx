@@ -1,13 +1,14 @@
 import RootLayout from "./../layout";
+
+import Footer from "@/components/footer";
 import Image from "next/image";
 
-export default function E4() {
+export default function Stages() {
   return (
     <>
       <RootLayout>
-        <h2 className="title">Epreuve E4</h2>
+        <h2 className="title">Stages</h2>
         <section className="border">
-          <h3>Les stages</h3>
           <div className="stage1">
             <p>Stage 1 ère années</p>
             <div className="identity daily">
