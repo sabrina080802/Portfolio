@@ -1,49 +1,46 @@
+import Link from "next/link";
 import RootLayout from "./../layout";
-import Image from "next/image";
+import Stage from "@/components/stage";
 
 export default function E4() {
   return (
     <>
       <RootLayout>
         <h2 className="title">Epreuve E4</h2>
-        <section className="border">
-          <h3>Les stages</h3>
-          <div className="stage1">
-            <p>Stage 1 ère années</p>
-            <div className="identity daily">
-              <Image
-                src="/photo/AlsaceDigitale.jpeg"
-                width={300}
-                height={300}
-                alt={"image"}
-                className="daily-img"
-              />
-            </div>
-            <p>Alsace Digitale</p>
-            <a href="/photo/CompteRendue1.pdf" download>
-              <button> Télécharger le compte rendue 1 ere années </button>
-            </a>
-          </div>
-          <div className="stage2">
-            <p>Stage 2 ème années</p>
-            <div className="identity daily">
-              <Image
-                src="/photo/Numerize.png"
-                width={300}
-                height={300}
-                alt={"image"}
-                className="daily-img"
-              />
-            </div>
-            <p>Numerize</p>
+        <h3>Les stages </h3>
+        <Stage
+          stage="Stage de 1ère année"
+          description={"une description"}
+          image={"/photo/AlsaceDigitale.jpeg"}
+          name="Alsace Digitale"
+          link={"/photo/CompteRendue1.pdf"}
+          descriptionlink="Télécharger le compte rendue 1ère année"
+        />
+        <Stage
+          stage="Stage de 2ère année"
+          description={"une description"}
+          image={"/photo/Numerize.png"}
+          link={"/photo/CompteRendue2.pdf"}
+          descriptionlink="Télécharger le compte rendue 2ème année"
+          name="Numérize"
+        />
+        <div className="mt-24 flex flex-col gap-7 justify-start">
+          <h4>Les compétences validées</h4>
+          <p className="">compétences</p>
+        </div>
 
-            <a href="/photo/CompteRendue2.pdf" download>
-              <button> Télécharger le compte rendue 2 ème années </button>
-            </a>
+        <div className="mt-24 flex flex-col gap-7 justify-start">
+          <h3>Tableau de Compétences</h3>
+          <div>
+            <Link href="/photo/Competence.pdf" download className="btn">
+              Télécharger le tableau de compétences{" "}
+            </Link>
           </div>
+        </div>
 
-          <p>Les compétences validées</p>
-        </section>
+        <div className="mt-24">
+          <h3>Vidéo</h3>
+        </div>
       </RootLayout>
     </>
   );

@@ -22,14 +22,12 @@ export default function Project(infos: ProjectInfo) {
         </div>
         <h4>{infos.name}</h4>
         <p>{infos.description}</p>
-        <div className="align-right">
-          <button
-            className="btn-type-more"
-            onClick={() => (window.location.href = infos.pageLink)}
-          >
-            Découvrir →
-          </button>
-        </div>
+        <button
+          className="btn-type-more"
+          onClick={() => (window.location.href = infos.pageLink)}
+        >
+          Découvrir →
+        </button>
       </div>
     </>
   );

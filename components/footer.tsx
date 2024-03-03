@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2024 Sabrina, Tous droits réservés.</p>
+          <p>2024 Sabrina</p>
         </div>
       </footer>
     </div>

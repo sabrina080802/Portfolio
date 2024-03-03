@@ -42,15 +42,12 @@ export default function Header() {
             }
           >
             Expériences
-            <div className="sub-menu">
-              <Link href={"/experiences/CV"}>CV</Link>
-              <Link href={"/experiences/Stages"}>Stages</Link>
-            </div>
           </Link>
           <Link
-            href={"/Cned"}
+            href={"/Cned/E4"}
             className={
-              "disable-hover " + (router.pathname === "/Cned" ? "active" : "")
+              "disable-hover " +
+              (router.pathname === "/Cned/E4" ? "active" : "")
             }
           >
             Cned
@@ -59,7 +56,6 @@ export default function Header() {
               <Link href={"/Cned/VeilleTechnologique"}>
                 Veille Technologique
               </Link>
-              <Link href={"/Cned/Tableau"}>Compétences</Link>
             </div>
           </Link>
         </nav>

@@ -1,58 +1,36 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export type StageInfo = {
   image: string;
+  name: string;
+  stage: string;
+  description: string;
+  link: string;
+  descriptionlink: string;
 };
 
 export default function Stage(infos: StageInfo) {
   return (
-    <>
-      <div className="stage-container">
-        <div className="identity daily">
-          <Image
-            src="/photo/AlsaceDigitale.jpeg"
-            width={300}
-            height={300}
-            alt={"image"}
-            className="daily-img"
-          />
-        </div>
-        <div className="stage-container">
-          <p>Alsace Digitale</p>
-        </div>
+    <div className="flex gap-6 items-center">
+      <div className="">
+        <p>{infos.stage}</p>
+        <Image
+          src={infos.image}
+          width={300}
+          height={300}
+          alt={"image"}
+          className="bg-white rounded-xl shadow aspect-square max-w-48 object-contain p-2"
+        />
       </div>
-      <div className="stage-description">
-        <h2>Stage 1ère année</h2>
-        <p>Description du stage...</p>
-        <a href="/photo/CompteRendue1.pdf" download>
-          <button className="btn">
-            Télécharger le compte rendue 1 ère années
-          </button>
-        </a>
+      <div className="flex-1">
+        <h4>{infos.name}</h4>
+
+        <p>{infos.description}</p>
+        <Link href={infos.link} download className="btn">
+          {infos.descriptionlink}
+        </Link>
       </div>
-      <div className="stage-container">
-        <div className="identity daily">
-          <Image
-            src="/photo/Numerize.png"
-            width={300}
-            height={300}
-            alt={"image"}
-            className="daily-img"
-          />
-        </div>
-        <div className="stage-container">
-          <p>Numérize</p>
-        </div>
-      </div>
-      <div className="stage-description">
-        <h2>Stage 2ème année</h2>
-        <p>Description du stage...</p>
-        <a href="/photo/CompteRendue1.pdf" download>
-          <button className="btn">
-            Télécharger le compte rendue 2 ème années
-          </button>
-        </a>
-      </div>
-    </>
+    </div>
   );
 }

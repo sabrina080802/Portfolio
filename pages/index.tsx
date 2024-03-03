@@ -11,7 +11,7 @@ export default function Home() {
         <section className="border">
           <Identity />
 
-          <div className="about-me">
+          <div className="about-me flex flex-col gap-10">
             <article>
               <h2>Bonjour !</h2>
               <p>
@@ -23,7 +23,7 @@ export default function Home() {
                 À chaque projet, un nouveau défi à surmonter, une nouvelle
                 histoire à écrire
               </p>
-              <div className="grid grid-cols-2">
+              <div className="flex gap-2 flex-wrap">
                 <Link className="btn" href={"/contact-me"}>
                   Me contacter →{" "}
                 </Link>
@@ -45,15 +45,17 @@ export default function Home() {
                 </div>
 
                 <div className="section-container-name">
-                  <h6>BTS SIO</h6>
+                  <h5>BTS SIO</h5>
                   <span>L'école du BTS, Strasbourg</span>
                 </div>
                 <div className="date">2022-2024</div>
               </div>
 
-              <Link className="btn-type-1" href={"/experiences"}>
-                Découvrir la suite →
-              </Link>
+              <div className="mt-8">
+                <Link className="btn-type-1" href={"/experiences"}>
+                  Découvrir la suite →
+                </Link>
+              </div>
             </article>
 
             <article>
@@ -76,9 +78,11 @@ export default function Home() {
                 image="/photo/LeJeu.webp"
                 pageLink="/PageProjet/Lejeu"
               />
-              <Link className="btn-type-1" href={"/projets"}>
-                Découvrir la suite →
-              </Link>
+              <div className="mt-8">
+                <Link className="btn-type-1" href={"/projets"}>
+                  Découvrir la suite →
+                </Link>
+              </div>
             </article>
           </div>
         </section>
