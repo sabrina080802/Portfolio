@@ -5,11 +5,6 @@ import { useRouter } from "next/router";
 export default function Header() {
   const router = useRouter();
 
-  function handleMenuClick(event) {
-    event.preventDefault();
-    router.push(event.target.getAttribute("href"));
-  }
-
   return (
     <>
       <header>
@@ -19,7 +14,6 @@ export default function Header() {
         </Head>
         <nav className="Header">
           <Link
-            onClick={handleMenuClick}
             href={"/"}
             className={
               "disable-hover " + (router.pathname === "/" ? "active" : "")
@@ -28,7 +22,6 @@ export default function Header() {
             Accueil
           </Link>
           <Link
-            onClick={handleMenuClick}
             href={"/projets"}
             className={
               "disable-hover " +
@@ -37,16 +30,11 @@ export default function Header() {
           >
             Projets
             <div className="sub-menu">
-              <Link onClick={handleMenuClick} href={"/projets/CNED"}>
-                Projets CNED
-              </Link>
-              <Link onClick={handleMenuClick} href={"/projets/others"}>
-                Autres Projets
-              </Link>
+              <Link href={"/projets/CNED"}>Projets CNED</Link>
+              <Link href={"/projets/others"}>Autres Projets</Link>
             </div>
           </Link>
           <Link
-            onClick={handleMenuClick}
             href={"/experiences"}
             className={
               "disable-hover " +
@@ -55,16 +43,11 @@ export default function Header() {
           >
             Expériences
             <div className="sub-menu">
-              <Link onClick={handleMenuClick} href={"/experiences/CV"}>
-                CV
-              </Link>
-              <Link onClick={handleMenuClick} href={"/experiences/Stages"}>
-                Stages
-              </Link>
+              <Link href={"/experiences/CV"}>CV</Link>
+              <Link href={"/experiences/Stages"}>Stages</Link>
             </div>
           </Link>
           <Link
-            onClick={handleMenuClick}
             href={"/Cned"}
             className={
               "disable-hover " + (router.pathname === "/Cned" ? "active" : "")
@@ -72,23 +55,15 @@ export default function Header() {
           >
             Cned
             <div className="sub-menu">
-              <Link onClick={handleMenuClick} href={"/Cned/E4"}>
-                Épreuve E4
-              </Link>
-              <Link
-                onClick={handleMenuClick}
-                href={"/Cned/VeilleTechnologique"}
-              >
+              <Link href={"/Cned/E4"}>Épreuve E4</Link>
+              <Link href={"/Cned/VeilleTechnologique"}>
                 Veille Technologique
               </Link>
-              <Link onClick={handleMenuClick} href={"/Cned/Tableau"}>
-                Compétences
-              </Link>
+              <Link href={"/Cned/Tableau"}>Compétences</Link>
             </div>
           </Link>
         </nav>
         <Link
-          onClick={handleMenuClick}
           href={"/contact-me"}
           className={
             router.pathname === "/contact-me" ? "contact-active" : "go-contact"
