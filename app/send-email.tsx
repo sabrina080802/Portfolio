@@ -1,5 +1,5 @@
-import { FormData } from '@/pages/contact-me';
+import { FormData } from "@/pages/contact-me";
 
-export function sendEmail(data: FormData){
-    console.log(data);
+export function sendEmail(data: FormData) {
+  return <></>;
 }

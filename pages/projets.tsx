@@ -1,4 +1,3 @@
-import RootLayout from "./layout";
 import { MouseEventHandler } from "react";
 import React, { useState } from "react";
 
@@ -72,38 +71,38 @@ export default function Projets() {
 
   return (
     <>
-      <RootLayout>
-        <section>
-          <h2>Tous les projet</h2>
-          <div className="mosaic">
-            <div className="tag-list">
+      <section>
+        <h2>Tous les projet</h2>
+        <div className="mosaic">
+          <div className="tag-list">
+            <button
+              onClick={clearFilters}
+              className={enabledTags.length == 0 ? "active" : ""}
+            >
+              Tous
+            </button>
+            {tagList.map((tag, index) => (
               <button
-                onClick={clearFilters}
-                className={enabledTags.length == 0 ? "active" : ""}
+                key={index}
+                onClick={filterByTag}
+                className={enabledTags.indexOf(tag) !== -1 ? "active" : ""}
               >
-                Tous
+                {tag.tagName}
               </button>
-              {tagList.map((tag) => (
-                <button
-                  onClick={filterByTag}
-                  className={enabledTags.indexOf(tag) !== -1 ? "active" : ""}
-                >
-                  {tag.tagName}
-                </button>
-              ))}
-            </div>
-            {projectList.map((proj) => (
-              <Project
-                name={proj.name}
-                tags={proj.tags}
-                description={proj.description}
-                image={proj.image}
-                pageLink={proj.pageLink}
-              />
             ))}
           </div>
-        </section>
-      </RootLayout>
+          {projectList.map((proj, index) => (
+            <Project
+              key={index}
+              name={proj.name}
+              tags={proj.tags}
+              description={proj.description}
+              image={proj.image}
+              pageLink={proj.pageLink}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 }

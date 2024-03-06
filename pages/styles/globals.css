@@ -47,8 +47,10 @@ header {
   justify-content: center;
   align-items: center;
   padding: 1.5em 0;
+  margin: 0 auto;
   margin-bottom: 4em;
   width: 100%;
+  max-width: calc(80vw - 3em);
   background-color: #f4f2feaa;
 }
 h1 {

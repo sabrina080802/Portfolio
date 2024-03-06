@@ -1,10 +1,4 @@
-import RootLayout from "./../layout";
-import Footer from "@/components/footer";
-import Identity from "@/components/identity";
-import { MouseEventHandler, useEffect } from "react";
 import React, { useState } from "react";
-
-import ProjectTest from "@/components/project-filter";
 import Project, { ProjectInfo } from "@/components/project";
 
 import projects from "@/public/projects.json";
@@ -22,27 +16,29 @@ export default function OtherProjects() {
   const [enabledTags, setEnabledTags] = useState<ProjectFilter[]>([]);
 
   React.useEffect(() => {
-    const newTagList: ProjectFilter[] = [];
+    if (typeof window != "undefined") {
+      const newTagList: ProjectFilter[] = [];
 
-    otherProjects.forEach((proj, index) => {
-      proj.tags.forEach((tag) => {
-        const existingTag = newTagList.find((t) => t.tagName === tag);
+      otherProjects.forEach((proj, index) => {
+        proj.tags.forEach((tag) => {
+          const existingTag = newTagList.find((t) => t.tagName === tag);
 
-        if (existingTag) {
-          existingTag.projects.push(proj);
-        } else {
-          newTagList.push({
-            tagName: tag,
-            projects: [proj],
-            enabled: false,
-          });
-        }
+          if (existingTag) {
+            existingTag.projects.push(proj);
+          } else {
+            newTagList.push({
+              tagName: tag,
+              projects: [proj],
+              enabled: false,
+            });
+          }
+        });
       });
-    });
 
-    setTagList(newTagList);
-    setProjectList(otherProjects);
-    setEnabledTags([]);
+      setTagList(newTagList);
+      setProjectList(otherProjects);
+      setEnabledTags([]);
+    }
   }, []);
 
   function filterByTag(event: React.MouseEvent<HTMLButtonElement>) {
@@ -76,23 +72,21 @@ export default function OtherProjects() {
 
   return (
     <>
-      <RootLayout>
-        <section>
-          <h2>Autres projets</h2>
-          <div className="mosaic">
-            {projectList.map((proj) => (
-              <Project
-                key={proj.name}
-                name={proj.name}
-                tags={proj.tags}
-                description={proj.description}
-                image={proj.image}
-                pageLink={proj.pageLink}
-              />
-            ))}
-          </div>
-        </section>
-      </RootLayout>
+      <section>
+        <h2>Autres projets</h2>
+        <div className="mosaic">
+          {projectList.map((proj, index) => (
+            <Project
+              key={index}
+              name={proj.name}
+              tags={proj.tags}
+              description={proj.description}
+              image={proj.image}
+              pageLink={proj.pageLink}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 }

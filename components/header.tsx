@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -8,10 +7,6 @@ export default function Header() {
   return (
     <>
       <header>
-        <Head>
-          <link rel="preconnect" href="https://rsms.me/" />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        </Head>
         <nav className="Header">
           <Link
             href={"/"}

@@ -1,5 +1,3 @@
-import RootLayout from "./layout";
-
 import Contact from "@/components/contact";
 import Identity from "@/components/identity";
 
@@ -14,15 +12,13 @@ export type FormData = {
 export default function ContactMe() {
   return (
     <>
-      <RootLayout>
-        <section>
-          <Identity />
-          <div className="about-me">
-            <h3>Contactez moi</h3>
-            <Contact />
-          </div>
-        </section>
-      </RootLayout>
+      <section>
+        <Identity />
+        <div className="about-me">
+          <h3>Contactez moi</h3>
+          <Contact />
+        </div>
+      </section>
     </>
   );
 }

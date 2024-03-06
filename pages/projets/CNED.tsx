@@ -1,5 +1,3 @@
-import RootLayout from "./../layout";
-
 import { MouseEventHandler } from "react";
 import React, { useState } from "react";
 import ProjectTest from "@/components/project-filter";
@@ -19,33 +17,35 @@ export default function ProjetCNED() {
   const [enabledTags, setEnabledTags] = useState<ProjectFilter[]>([]);
 
   React.useEffect(() => {
-    const newTagList: ProjectFilter[] = [];
+    if (typeof window != "undefined") {
+      const newTagList: ProjectFilter[] = [];
 
-    cnedProjects.forEach((proj, index) => {
-      proj.tags.forEach((tag) => {
-        const existingTag = newTagList.find((t) => t.tagName === tag);
+      cnedProjects.forEach((proj, index) => {
+        proj.tags.forEach((tag) => {
+          const existingTag = newTagList.find((t) => t.tagName === tag);
 
-        if (existingTag) {
-          existingTag.projects.push(proj);
-        } else {
-          newTagList.push({
-            tagName: tag,
-            projects: [proj],
-            enabled: false,
-          });
-        }
+          if (existingTag) {
+            existingTag.projects.push(proj);
+          } else {
+            newTagList.push({
+              tagName: tag,
+              projects: [proj],
+              enabled: false,
+            });
+          }
+        });
       });
-    });
 
-    setTagList(newTagList);
-    setProjectList(cnedProjects);
-    setEnabledTags([
-      {
-        tagName: "CNED",
-        enabled: true,
-        projects: cnedProjects.filter((x) => x.tags.includes("CNED")),
-      },
-    ]);
+      setTagList(newTagList);
+      setProjectList(cnedProjects);
+      setEnabledTags([
+        {
+          tagName: "CNED",
+          enabled: true,
+          projects: cnedProjects.filter((x) => x.tags.includes("CNED")),
+        },
+      ]);
+    }
   }, []);
 
   function filterByTag(event: React.MouseEvent<HTMLButtonElement>) {
@@ -83,22 +83,21 @@ export default function ProjetCNED() {
 
   return (
     <>
-      <RootLayout>
-        <section>
-          <h2>PROJETS CNED</h2>
-          <div className="mosaic">
-            {projectList.map((proj) => (
-              <Project
-                name={proj.name}
-                tags={proj.tags}
-                description={proj.description}
-                image={proj.image}
-                pageLink={proj.pageLink}
-              />
-            ))}
-          </div>
-        </section>
-      </RootLayout>
+      <section>
+        <h2>PROJETS CNED</h2>
+        <div className="mosaic">
+          {projectList.map((proj, index) => (
+            <Project
+              key={index}
+              name={proj.name}
+              tags={proj.tags}
+              description={proj.description}
+              image={proj.image}
+              pageLink={proj.pageLink}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 }

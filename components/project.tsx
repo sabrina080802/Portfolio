@@ -17,7 +17,7 @@ export default function Project(infos: ProjectInfo) {
         </div>
         <div className="tags">
           {infos.tags.map((element, index) => (
-            <span>{element}</span>
+            <span key={index}>{element}</span>
           ))}
         </div>
         <h4>{infos.name}</h4>
