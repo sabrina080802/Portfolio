@@ -32,7 +32,7 @@ export default function Espard() {
             className="rounded-xl"
           />
           <p>
-            J'ai réalisé tout le visuel d'A à Z de l'application. Et j'ai
+            J'ai réalisé tout le visuel de A à Z de l'application. Et j'ai
             réaliser beaucoup des exercices proposés.
           </p>
         </div>

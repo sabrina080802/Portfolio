@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
+const iframeSrc =
+  "https://docs.google.com/presentation/d/e/2PACX-1vR-cRAU-ljNJfiOfXYe-qVPmNwWBKjBP3mCTRRn1-rwuuA_qB1suweiiBTOESRXr_R0mPmaXOJnveR7/pub?start=false&loop=false&delayms=5000";
+
 export default function Debian() {
   return (
     <>
@@ -30,10 +33,10 @@ export default function Debian() {
             className="rounded-xl"
           />
         </div>
-        <Link href="/photo/Presentation1.pptx" download className="btn">
-          Diaporama du projet
-        </Link>
       </div>
+      <a href={iframeSrc} target="_blank" rel="noopener noreferrer">
+        Ouvrir la présentation
+      </a>
 
       <div className="about-me">
         <div className="Source"></div>
