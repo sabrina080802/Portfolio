@@ -11,14 +11,14 @@ export default function E4() {
         description={"une description"}
         image={"/photo/AlsaceDigitale.jpeg"}
         name="Alsace Digitale"
-        link={"/photo/CompteRendue1.pdf"}
+        link={"/photo/RapportDeStage1.pdf"}
         descriptionlink="Télécharger le compte rendue 1ère année"
       />
       <Stage
         stage="Stage de 2ème année"
         description={"une description"}
         image={"/photo/Numerize.png"}
-        link={"/photo/CompteRendue2.pdf"}
+        link={"/photo/RapportDeStage2.pdf"}
         descriptionlink="Télécharger le compte rendue 2ème année"
         name="Numérize"
       />
@@ -39,12 +39,7 @@ export default function E4() {
       <div className="mt-24">
         <h3>Ma vidéo de présentation</h3>
         <br />
-        <iframe
-          width="560"
-          height="315"
-          src="/photo/Compétences.mp4"
-          allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
+        <Link href="https://www.youtube.com/watch?v=zR_iStEf6J0"></Link>
       </div>
     </>
   );
