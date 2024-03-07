@@ -96,6 +96,7 @@ export default function MediatekFormation() {
       </div>
       <div>
         <h3>Compétences visées</h3>
+        <p></p>
       </div>
       <div className="about-me">
         <div className="Source"></div>
