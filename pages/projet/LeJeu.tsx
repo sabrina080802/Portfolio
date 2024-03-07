@@ -30,6 +30,10 @@ export default function LeJeu() {
             alt="image"
             className="rounded-xl"
           />
+          <p>
+            Cette application est en cours de développement. Vous pouvez suivre
+            nos avancer via GitHub
+          </p>
         </div>
       </div>
 

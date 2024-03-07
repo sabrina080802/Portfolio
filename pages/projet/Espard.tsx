@@ -31,6 +31,10 @@ export default function Espard() {
             alt="image"
             className="rounded-xl"
           />
+          <p>
+            J'ai réalisé tout le visuel d'A à Z de l'application. Et j'ai
+            réaliser beaucoup des exercices proposés.
+          </p>
         </div>
       </div>
 

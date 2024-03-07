@@ -42,7 +42,7 @@ export default function Home() {
 
             <div className="section-container-name">
               <h5>BTS SIO</h5>
-              <span>L'école du BTS, Strasbourg</span>
+              <span>Cned, Strasbourg</span>
             </div>
             <div className="date">2022-2024</div>
           </div>

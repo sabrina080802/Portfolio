@@ -18,13 +18,13 @@ export default function MediatekFormation() {
           <div>
             <h3>Contexte</h3>
             <div>
-              <Link href="/photo/Competence.pdf" download className="btn">
+              <Link href="/photo/context.pdf" download className="btn">
                 Télécharger le contexte détaillé{" "}
               </Link>
             </div>
             <h3>Mission</h3>
             <div>
-              <Link href="/photo/Competence.pdf" download className="btn">
+              <Link href="/photo/contratDev.pdf" download className="btn">
                 Télécharger le contrat de développement{" "}
               </Link>
             </div>
@@ -41,22 +41,25 @@ export default function MediatekFormation() {
           </div>
 
           <div className="mt-24 flex flex-col gap-7 justify-start">
-            <Link href="/photo/Competence.pdf" download className="btn">
+            <Link href="/photo/cahier_des_charges.pdf" download className="btn">
               Cahier des charges
             </Link>
-            <Link href="" download className="btn">
+            <Link href="/photo/dossierDoc.pdf" download className="btn">
               Dossier documentaire
             </Link>
-            <Link href="" download className="btn">
+            <Link href="/photo/pv_recette.pdf" download className="btn">
               Pv de recette
             </Link>
-            <Link href="" download className="btn">
+            <Link href="/photo/plan_de_tests.pdf" download className="btn">
               Plan de Test
             </Link>
-            <Link href="" download className="btn">
+            <Link
+              href="https://github.com/sabrina080802/cnedProjet1"
+              className="btn"
+            >
               Accès Github
             </Link>
-            <Link href="" download className="btn">
+            <Link href="https://index.html" download className="btn">
               Documentation
             </Link>
             <Link href="" download className="btn">
@@ -79,19 +82,15 @@ export default function MediatekFormation() {
           className="rounded-xl"
         />
       </div>
-
       <div className="mt-24">
         <h3>Ma vidéo de présentation</h3>
         <br />
-        <iframe
-          width="560"
-          height="315"
-          src=""
-          allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
+        <Link href="" className="btn">
+          Vidéo de présentation{" "}
+        </Link>
       </div>
       <div>
-        <Link href="/photo/Competence.pdf" download className="btn">
+        <Link href="/photo/RapportApp.pdf" download className="btn">
           Télécharger le compte-rendu d'activité{" "}
         </Link>
       </div>
