@@ -7,7 +7,7 @@ export default function PingPong() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>PingPong</h2>
-          <h4>Déc.2023</h4>
+          <h4>Jeu PC • Déc.2023</h4>
           <Link
             href="https://github.com/sabrina080802/PingPong"
             className="text-purple-600 hover:text-purple-400"
@@ -18,7 +18,9 @@ export default function PingPong() {
           <div>
             <h3>Objectif :</h3>
             <p>
-              Réalisation d'un ping pong en Java avec des effets de particules.
+              Ce projet, qui consiste en la création d'un jeu de ping-pong en
+              Java agrémenté d'effets de particules, avait pour objectif
+              principal de me permettre de renouer avec le langage Java.
             </p>
           </div>
           <Image
@@ -29,6 +31,11 @@ export default function PingPong() {
             className="rounded-xl"
           />
         </div>
+        <p>
+          Voici les effets de particules. J'ai entamé ce projet en utilisant du
+          code très simplifié, dans le but de me réaccoutumer en douceur au Java
+          tout en réapprenant les méthodes orientées objet.
+        </p>
       </div>
 
       <div className="about-me">

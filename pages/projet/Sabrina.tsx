@@ -7,7 +7,7 @@ export default function Sabrina() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>Sabrina</h2>
-          <h4>Janvier.2024</h4>
+          <h4>Site Web • Déc - Janv 2024</h4>
           <Link
             href=""
             className="text-purple-600 hover:text-purple-400"

@@ -7,7 +7,7 @@ export default function Policloud() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>Policloud</h2>
-          <h4>Janv.2022</h4>
+          <h4>Site Web • Nov-Janv.2022</h4>
           <Link
             href="https://github.com/sabrina080802/Policloud"
             className="text-purple-600 hover:text-purple-400"
@@ -44,6 +44,13 @@ export default function Policloud() {
               className="rounded-xl"
             />
           </div>
+          <p>
+            {" "}
+            J'ai mené à bien ce projet en autonomie, en gérant la récupération
+            du texte des discours à partir des vidéos en C#. Par la suite, j'ai
+            extrait les mots les plus cités et pris en charge la partie
+            visuelle, en tenant compte des contraintes graphiques.
+          </p>
         </div>
       </div>
 

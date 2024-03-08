@@ -7,7 +7,7 @@ export default function Magy() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>Magy</h2>
-          <h4>Déc.2023</h4>
+          <h4>Framework • Déc.2023</h4>
           <Link
             href="https://github.com/sabrina080802/Magy"
             className="text-purple-600 hover:text-purple-400"

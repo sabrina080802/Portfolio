@@ -7,7 +7,7 @@ export default function LeJeu() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>Le Jeu</h2>
-          <h4>Déc.2023</h4>
+          <h4>Application Web/Mobile • Déc 2023 - en cours</h4>
           <Link
             href=""
             className="text-purple-600 hover:text-purple-400"

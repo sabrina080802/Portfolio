@@ -10,7 +10,7 @@ export default function Debian() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>Installation d'un poste pour développement</h2>
-          <h4>Oct.2021</h4>
+          <h4> Oct-Nov 2021</h4>
           <Link
             href="/photo/RapportSAE-OFFERLE-ALHAMMUTI.pdf"
             download

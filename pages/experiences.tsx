@@ -17,6 +17,21 @@ export default function Experiences() {
         description={"une description"}
         annee={"2022 - 2024"}
       />
+      <Experience
+        name={"BUT INFORMATIQUE"}
+        description={"une description"}
+        annee={"2021 - 2022"}
+      />
+      <Experience
+        name={"DUT INFORMATIQUE"}
+        description={"une description"}
+        annee={"2020 - 2021"}
+      />
+      <Experience
+        name={"TERMINAL ES "}
+        description={"une description"}
+        annee={"2029 - 2020"}
+      />
       <section className="border">
         <div className="mt-24 flex flex-col gap-7 justify-start">
           <h3 className="mt-8">Mon cv</h3>

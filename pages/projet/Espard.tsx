@@ -7,7 +7,7 @@ export default function Espard() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>Espard</h2>
-          <h4>Mai.2022</h4>
+          <h4> Application de bureau • Mai-Juin 2022</h4>
           <Link
             href="https://github.com/sabrina080802/Espard"
             className="text-purple-600 hover:text-purple-400"

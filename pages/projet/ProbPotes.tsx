@@ -7,7 +7,7 @@ export default function ProbPotes() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>ProbPotes</h2>
-          <h4>Mai.2021</h4>
+          <h4>Application de bureau • Mai-Juin 2021</h4>
           <Link
             href=""
             className="text-purple-600 hover:text-purple-400"
