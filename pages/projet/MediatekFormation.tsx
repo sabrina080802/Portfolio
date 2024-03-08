@@ -105,7 +105,47 @@ export default function MediatekFormation() {
       </div>
       <div>
         <h3>Compétences visées</h3>
-        <p></p>
+        <h4>Bloc 1 : Services informatiques aux organisations</h4>
+        <h5> Gérer le patrimoine informatique</h5>
+        <li>
+          <ul>
+            • Exploiter des référentiels, normes et standards adoptés par le
+            prestataire informatique.
+          </ul>
+          <ul>
+            • Vérifier les conditions de la continuité d’un service informatique
+            • Gérer des sauvegardes{" "}
+          </ul>
+        </li>
+        <h5>Développer la présence en ligne de l’organisation</h5>
+        <li>
+          <ul>
+            Participer à la valorisation de l’image de l’organisation sur les
+            médias numériques en tenant compte du cadre juridique et des enjeux
+            économiques
+          </ul>
+          <ul>
+            Participer à l’évolution d’un site Web exploitant les données de
+            l’organisation
+          </ul>
+        </li>
+        <p>
+          Travailler en mode projet Analyser les objectifs et les modalités
+          d’organisation d’un projet Planifier les activités Évaluer les
+          indicateurs de suivi d’un projet et analyser les écarts Bloc 2 :
+          Conception et développement d'une application Concevoir et développer
+          une application Analyser un besoin exprimé et son contexte juridique
+          Participer à la conception de l’architecture d’une solution
+          applicative Modéliser une solution applicative Identifier, développer,
+          utiliser ou adapter des composants logiciels Exploiter les ressources
+          du cadre applicatif (framework) Utiliser des composants d’accès aux
+          données Réaliser les tests nécessaires à la validation ou à la mise en
+          production d’éléments adaptés ou développés Gérer des données
+          Exploiter des données à l’aide d’un langage de requêtes Développer des
+          fonctionnalités applicatives au sein d’un système de gestion de base
+          de données (relationnel ou non) Concevoir ou adapter une base de
+          données
+        </p>
       </div>
       <div className="about-me">
         <div className="Source"></div>
