@@ -12,7 +12,7 @@
     "description": "Site de formation en informatique, avec une gestion de l'administation",
     "tags": ["PHP", "CSS", "CNED", "TWING"],
     "git": "https://github.com/sabrina080802/cnedProjet1",
-    "image": "/photo/github.svg",
+    "image": "/photo/MediatekFormation.png",
     "pageLink": "/projet/MediatekFormation"
   },
   {

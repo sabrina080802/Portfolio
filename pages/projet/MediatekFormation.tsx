@@ -7,22 +7,22 @@ export default function MediatekFormation() {
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="flex flex-col gap-4">
           <h2>MediatekFormation</h2>
-          <h4>Application Web • Déc - Fév 2023</h4>
-          <div className="flex gap-2 flex-wrap"></div>
-          <Link
-            href="https://github.com/sabrina080802/cnedProjet1"
-            className="text-purple-600 hover:text-purple-400"
-            target="blank"
-          >
-            Github
-          </Link>
-          <Link href="/photo/cahier_des_charges.pdf" download className="btn">
-            Cahier des charges
-          </Link>
-          <Link href="/photo/dossierDoc.pdf" download className="btn">
-            Dossier documentaire
-          </Link>
         </div>
+        <h4>Application Web • Déc - Fév 2023</h4>
+        <div className="flex gap-2 flex-wrap"></div>
+        <Link
+          href="https://github.com/sabrina080802/cnedProjet1"
+          className="text-purple-600 hover:text-purple-400"
+          target="blank"
+        >
+          Github
+        </Link>
+        <Link href="/photo/cahier_des_charges.pdf" download className="btn">
+          Cahier des charges
+        </Link>
+        <Link href="/photo/dossierDoc.pdf" download className="btn">
+          Dossier documentaire
+        </Link>
       </div>
       <p>
         Pour mon projet de BTS, j'ai développé une application web nommée
@@ -81,7 +81,7 @@ export default function MediatekFormation() {
       </div>
 
       <Image
-        src="/photo/MediatekFormation"
+        src="/photo/MediatekFormation.png"
         width={300}
         height={300}
         alt="image"
