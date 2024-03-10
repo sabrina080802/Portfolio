@@ -48,7 +48,6 @@ export default function Debian() {
         <a href={iframeSrc} target="_blank" rel="noopener noreferrer">
           Ouvrir la présentation
         </a>
-
         <div className="about-me">
           <div className="Source"></div>
         </div>

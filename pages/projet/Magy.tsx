@@ -46,7 +46,14 @@ export default function Magy() {
             className="rounded-xl"
           />
         </div>
-
+        <p>
+          Se lancer dans la création de mon propre framework a été un défi
+          personnel stimulant. Passionnée par l'apprentissage, l'idée de
+          développer un outil sur mesure pour approfondir mes connaissances en
+          programmation m'a particulièrement motivée. Cette démarche,
+          ambitieuse, m'a permis de pousser mes limites et d'enrichir mon
+          expertise technique de manière significative.
+        </p>{" "}
         <div className="about-me">
           <div className="Source"></div>
         </div>

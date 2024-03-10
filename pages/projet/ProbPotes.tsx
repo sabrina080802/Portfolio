@@ -37,7 +37,7 @@ export default function ProbPotes() {
 
             <div className="flex flex-05 flex-col justify-start items-center mt-0">
               <h3 className="text-left">Langage et outils utilisés</h3>
-              <p className="w-full m-0">Langages : .NET/C#</p>
+              <p className="w-full m-0">Langages : .NET/C#/SQL</p>
             </div>
           </div>
           <div>
@@ -50,7 +50,18 @@ export default function ProbPotes() {
             />
           </div>
         </div>
-
+        <p>
+          Notre application a été développée en collaboration au sein d'un
+          groupe de quatre personnes, dans le cadre d'un projet
+          interdisciplinaire associant deux modules d'étude : "Développement
+          d'Applications" et "Bases de Données". Ce projet nous a permis de
+          concrétiser nos connaissances en concevant une base de données
+          fonctionnelle, pour laquelle nous avons employé le langage SQL. Cette
+          expérience collaborative a non seulement renforcé nos compétences
+          techniques dans ces domaines clés de l'informatique, mais a également
+          souligné l'importance du travail d'équipe dans la réussite d'un projet
+          informatique complexe.
+        </p>
         <div className="about-me">
           <div className="Source"></div>
         </div>

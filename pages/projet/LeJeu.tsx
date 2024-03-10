@@ -53,8 +53,9 @@ export default function LeJeu() {
             className="rounded-xl"
           />
           <p className="text-justify">
-            Cette application est en cours de développement. Vous pouvez suivre
-            mes avancer via GitHub
+            Cette application est actuellement en phase de développement. Pour
+            suivre mes progrès et toutes les mises à jour, je vous invite à
+            consulter mon GitHub.
           </p>
         </div>
 
