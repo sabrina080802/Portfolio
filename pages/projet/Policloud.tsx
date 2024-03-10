@@ -20,7 +20,6 @@ export default function Policloud() {
             <div className="flex flex-col gap-4">
               <h4>Site Web • Nov-Janv.2022</h4>
             </div>
-
             <Link
               href="https://github.com/sabrina080802/Policloud"
               className="text-purple-600 hover:text-purple-400"
@@ -28,24 +27,24 @@ export default function Policloud() {
             >
               Github
             </Link>
-            <p className="text-justify">
-              Dire quels sont les thèmes majeurs, quelles sont les idées
-              dominantes, dans les messages de vœux de Nouvel An adressés aux
-              Français par les présidents de la République chaque année. A cette
-              fin, on produira un nuage de mots pour l’ensemble. Mais, pour les
-              étudiants volontaires, il est également possible d’introduire un
-              paramètre de temps : un nuage de mots par période, ou un seul
-              nuage de mots qui se modifie automatiquement pour refléter
-              l’évolution temporelle.
-            </p>
-          </div>
 
+            <div>
+              <h3>Objectif :</h3>
+              <p>
+                Dire quels sont les thèmes majeurs, quelles sont les idées
+                dominantes, dans les messages de vœux de Nouvel An adressés aux
+                Français par les présidents de la République chaque année. A
+                cette fin, on produira un nuage de mots pour l’ensemble. Mais,
+                pour les étudiants volontaires, il est également possible
+                d’introduire un paramètre de temps : un nuage de mots par
+                période, ou un seul nuage de mots qui se modifie automatiquement
+                pour refléter l’évolution temporelle.
+              </p>
+            </div>
+          </div>
           <div className="flex flex-05 flex-col justify-start items-center mt-0">
             <h3 className="text-left">Langage et outils utilisés</h3>
-            <p className="w-full m-0">Langages : Polynésien / Chinois</p>
-            <p className="w-full m-0">Serveur : Jean-Yves</p>
-            <p className="w-full m-0">Framework : Tous</p>
-            <p className="w-full m-0">Authentification : Paul le videur</p>
+            <p className="w-full m-0">Langages : HTML/CSS/C#</p>
           </div>
         </div>
         <div>

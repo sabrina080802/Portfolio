@@ -92,7 +92,18 @@ export default function MediatekFormation() {
                 informatique
               </ul>
               <ul>• Gérer des sauvegardes </ul>
-
+              <h6>
+                {" "}
+                Répondre aux incidents et aux demandes d’assistance et
+                d’évolution
+              </h6>
+              <ul>• Collecter, suivre et orienter des demandes</ul>
+              <ul>
+                {" "}
+                • Traiter des demandes concernant les services réseau et
+                système, applicatifs
+              </ul>
+              <ul>• Traiter des demandes concernant les applications</ul>
               <h6>Développer la présence en ligne de l’organisation</h6>
               <ul>
                 • Participer à la valorisation de l’image de l’organisation sur
@@ -103,7 +114,6 @@ export default function MediatekFormation() {
                 • Participer à l’évolution d’un site Web exploitant les données
                 de l’organisation
               </ul>
-
               <h6>Travailler en mode projet</h6>
               <ul>
                 • Analyser les objectifs et les modalités d’organisation d’un
@@ -114,8 +124,20 @@ export default function MediatekFormation() {
                 • Évaluer les indicateurs de suivi d’un projet et analyser les
                 écarts
               </ul>
+              <h6>
+                {" "}
+                Mettre à disposition des utilisateurs un service informatique
+              </h6>
+              <ul>
+                • Réaliser les tests d’intégration et d’acceptation d’un service
+              </ul>
+              <ul>• Déployer un service</ul>
+              <ul>
+                {" "}
+                • Accompagner les utilisateurs dans la mise en place d’un
+                service
+              </ul>
             </div>
-
             <div>
               <h4>Bloc 2 : Conception et développement d'une application </h4>
               <h6>Concevoir et développer une application</h6>
@@ -164,7 +186,7 @@ export default function MediatekFormation() {
               </div>
               <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
                 <PDFPreview
-                  url="/photo/RapportApp.pdf"
+                  url="/photo/RapportAP1.pdf"
                   downloadable={true}
                   downloadText={"Télécharger le compte-rendu d'activité"}
                 />
@@ -201,7 +223,7 @@ export default function MediatekFormation() {
                 Accès à l'application en ligne
               </Link>
               <Link
-                href=""
+                href="/photo/Annexe.pdf"
                 download
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
