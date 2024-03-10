@@ -15,21 +15,3 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   );
 };
 export default Layout;
-/*export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <>
-      <Head>
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-      </Head>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
-  );
-}
-*/
