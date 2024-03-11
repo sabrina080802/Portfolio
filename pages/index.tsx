@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Identity from "@/components/identity";
 import Project from "@/components/project";
@@ -5,7 +6,7 @@ import "@/pages/styles/globals.css";
 
 export default function Home() {
   return (
-    <section className="border">
+    <section className="border page">
       <Identity />
 
       <div className="about-me flex flex-col gap-10">
@@ -82,7 +83,7 @@ export default function Home() {
             ]}
             description="Site web qui permet de réunir les fans de jeu video afin de se lancer des tournois ensemble"
             image="/photo/LeJeu.webp"
-            pageLink="/PageProjet/Lejeu"
+            pageLink="/projet/LeJeu"
           />
           <div className="mt-8">
             <Link className="btn-type-1" href={"/projets"}>

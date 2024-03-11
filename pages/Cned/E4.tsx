@@ -10,7 +10,7 @@ export default function E4() {
         <Stage
           stage="Stage de 1ère année"
           description={
-            "Alsace Digitale est une association ayant pour ambition d’animer et de promouvoir la révolution numérique en Alsace. C’est une association qui vise à faciliter l'émergence de projets innovants dans le domaine de l'économie numérique dans la région Alsace. Elle tend à favoriser le coworking des indépendants, entrepreneurs, plateformes artistiques, lieux alternatifs, pôles de compétitivité, structures de soutien à l'innovation, laboratoires de recherche spécialisés, écoles et universités.Dans le cadre de ce stage j'ai du réaliser le site web de l'association"
+            "Association ayant pour ambition d’animer et de promouvoir la révolution numérique en Alsace. C’est une association qui vise à faciliter l'émergence de projets innovants dans le domaine de l'économie numérique dans la région Alsace. Dans le cadre de ce stage j'ai du réaliser le site web de l'association"
           }
           image={"/photo/AlsaceDigitale.jpeg"}
           name="Alsace Digitale"

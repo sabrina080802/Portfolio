@@ -33,15 +33,15 @@ export default function LeJeu() {
                   framework "Magy"
                 </p>
               </div>
-              <div className="flex flex-05 flex-col justify-start items-center mt-0">
-                <h3 className="text-left">Langage et outils utilisés</h3>
-                <p className="w-full m-0">
-                  {" "}
-                  "PHP", "C#", "JavaScript", "HTML", "CSS"{" "}
-                </p>
-                <p className="w-full m-0">Serveur : Xampp</p>
-                <p className="w-full m-0">Framework : Magy </p>
-              </div>
+            </div>
+            <div className="flex flex-05 flex-col justify-start items-center mt-0">
+              <h3 className="text-left">Langage et outils utilisés</h3>
+              <p className="w-full m-0">
+                {" "}
+                "PHP", "C#", "JavaScript", "HTML", "CSS"{" "}
+              </p>
+              <p className="w-full m-0">Serveur : Xampp</p>
+              <p className="w-full m-0">Framework : Magy </p>
             </div>
           </div>
 

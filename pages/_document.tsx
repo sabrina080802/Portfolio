@@ -25,6 +25,7 @@ class PortfolioDocument extends Document {
     );
   }
 }
+
 export default PortfolioDocument;
 /*export default function RootLayout({
   children,

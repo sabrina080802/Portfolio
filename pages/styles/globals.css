@@ -24,6 +24,7 @@
 }
 body {
   background-color: #f4f2fe;
+  overflow-x: hidden;
 }
 * {
   border: none;
@@ -180,7 +181,7 @@ h1 {
 }
 section {
   display: flex;
-  width: calc(70vw - 1em);
+  width: 1300px;
   max-width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -220,6 +221,10 @@ section {
   font-size: 1em;
   transition: color 0.25s ease-out, background-color 0.25s ease-out;
 }
+.btn-type-2 {
+  padding: 0.5em 1.5em;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+}
 .btn-type-1 {
   text-align: center;
   background-color: var(--whiteBg);
@@ -243,6 +248,27 @@ section {
   background-color: transparent;
   cursor: pointer;
   padding: 1em;
+}
+.btn-type-more-2 {
+  position: relative;
+  margin-top: 0;
+  padding: 0.25em;
+  display: inline-block;
+  border-radius: 12px;
+  transition: transform 0.25s ease-out;
+}
+.btn-type-more-2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  border-bottom: 1px solid var(--mainColor);
+  transition: left 0.2s ease-out, width 0.2s ease-out;
+}
+.btn-type-more-2:hover::after {
+  left: 0;
+  width: 100%;
 }
 .section-container {
   display: flex;
@@ -672,4 +698,79 @@ footer {
 }
 .slick-dots {
   bottom: 0 !important;
+}
+
+.page-transition.mounted {
+  opacity: 1;
+}
+.page-transition {
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+.page-transition.enter {
+  opacity: 0;
+}
+.page-transition.enter-active {
+  opacity: 0;
+}
+.page-transition.enter-done {
+  opacity: 1;
+}
+.page-transition.exit-done {
+  opacity: 1;
+}
+.page-transition.exit-active {
+  opacity: 0;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 2.5em;
+  margin-bottom: 5em;
+}
+.experience-container::before {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  bottom: 0.25em;
+  left: calc(3em - 2px);
+  border: 1px solid var(--mainColor);
+  width: 5px;
+  border-radius: 25px;
+}
+.experience-content {
+  margin-left: -25px;
+  padding-left: 4em;
+}
+.experience-container > img {
+  position: sticky;
+  top: 15em;
+  margin-left: 1.5em;
+  border-radius: 150px;
+  border: 1px solid var(--mainColor);
+}
+.experience-container .year-begin {
+  position: absolute;
+  left: 1em;
+  top: -1.25em;
+  width: 4.75em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  font-size: 0.9em;
+}
+.experience-container .year-end {
+  position: absolute;
+  left: 1em;
+  width: 4.75em;
+  bottom: -1.25em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  font-size: 0.9em;
+}
+.experience-container h5 {
 }

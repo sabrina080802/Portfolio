@@ -12,7 +12,7 @@ export default function VeilleTechnologique() {
             width={300}
             height={300}
             alt="image"
-            className="rounded-xl"
+            className="rounded-xl w-full"
           />
           <h4>Daily.dev</h4>
           <p>

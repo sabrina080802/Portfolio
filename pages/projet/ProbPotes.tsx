@@ -49,6 +49,15 @@ export default function ProbPotes() {
               className="rounded-xl"
             />
           </div>
+          <div>
+            <Image
+              src="/photo/imageProb.webp"
+              width={300}
+              height={300}
+              alt="image"
+              className="rounded-xl"
+            />
+          </div>
         </div>
         <p>
           Notre application a été développée en collaboration au sein d'un
