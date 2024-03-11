@@ -28,7 +28,17 @@ export default function Home() {
             </Link>
           </div>
         </article>
-
+        <div className="flex flex-col">
+          <h3>Ma vidéo de présentation</h3>
+          <iframe
+            className="rounded-xl overflow-hidden"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gALNtmMA1Jw?si=9iObM7Ehh098qkwO"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        </div>
         <article>
           <h3>Mes expériences</h3>
           <p>
