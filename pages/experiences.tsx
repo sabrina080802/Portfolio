@@ -33,6 +33,33 @@ export default function Experiences() {
           startYear="2022"
           endYear="2024"
         />
+
+        <Experience
+          name={"Stage chez Numérize"}
+          lines={[
+            {
+              name: "Voir rapport de stage",
+              link: "/Cned/E4",
+              description:
+                "Depuis sa fondation en 2008, notre société s'est imposée comme un leader dans les domaines de la numérisation de documents et de l'archivage électronique. Mon immersion en tant que stagiaire dans cette entreprise innovante m'a permis de prendre part à des projets cruciaux, notamment le développement et l'optimisation d'une Gestion Électronique de Documents (GED). Au sein d'une équipe dynamique et avant-gardiste, j'ai eu l'opportunité d'exploiter et d'élargir mes compétences techniques en me consacrant aussi bien au développement backend qu'au développement frontend. Cette expérience m'a permis de me perfectionner dans l'utilisation de technologies de pointe telles que React pour le frontend, ainsi que PHP pour le backend, en plus de maîtriser des outils essentiels comme Docker et AWS pour la conteneurisation et le déploiement cloud. Ma contribution a été significative dans la réalisation et la performance de la GED, impliquant une immersion profonde dans le HTML et le CSS pour assurer une interface utilisateur intuitive et réactive. Mon engagement dans ce projet m'a non seulement permis de renforcer mes compétences en développement web, mais aussi de comprendre l'importance de la synergie entre les différentes technologies pour mener à bien des projets d'envergure. Cette expérience a été une véritable aventure professionnelle, me permettant de contribuer activement à la digitalisation et à l'efficacité des processus d'archivage, tout en naviguant à travers un environnement technologique riche et varié.",
+            },
+          ]}
+          startYear="15/01/2024"
+          endYear="11/04/2024"
+        />
+        <Experience
+          name={"Stage chez Alsace Digitale"}
+          lines={[
+            {
+              name: "Voir rapport de stage",
+              link: "/Cned/E4",
+              description:
+                "Association ayant pour ambition d’animer et de promouvoir la révolution numérique en Alsace. C’est une association qui vise à faciliter l'émergence de projets innovants dans le domaine de l'économie numérique dans la région Alsace. Ma participation en tant que stagiaire a été axée sur la création du site web de l'organisation, une expérience enrichissante qui m'a permis de peaufiner mes compétences en HTML/CSS ainsi qu'en SQL. Ce stage a été une opportunité précieuse d'appliquer mes connaissances théoriques dans un contexte professionnel, contribuant ainsi à l'épanouissement de ma passion pour le développement web et l'innovation numérique.",
+            },
+          ]}
+          startYear="01/02/2023"
+          endYear="28/02/2023"
+        />
         <Experience
           name={"BUT INFORMATIQUE"}
           lines={[
