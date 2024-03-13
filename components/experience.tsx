@@ -8,9 +8,12 @@ export type ExperienceInfo = {
   endYear: string;
 };
 export type ExperienceLine = {
+  links: Array<ExperienceProjectLink>;
+  description: string;
+};
+export type ExperienceProjectLink = {
   name: string;
   link: string;
-  description: string;
 };
 
 export default function Experience(infos: ExperienceInfo) {
@@ -30,12 +33,19 @@ export default function Experience(infos: ExperienceInfo) {
           {infos.lines.map((x, index) => (
             <div key={index} className="mb-8">
               <p>{x.description}</p>
-              {x.link !== "" && (
+              {x.links.length > 0 && (
                 <>
                   <h5>Projets liés</h5>
-                  <Link className="btn-type-more btn-type-more-2" href={x.link}>
-                    {x.name}
-                  </Link>
+                  {x.links.map((y) => (
+                    <>
+                      <Link
+                        className="btn-type-more btn-type-more-2"
+                        href={y.link}
+                      >
+                        {y.name}
+                      </Link>
+                    </>
+                  ))}
                 </>
               )}
             </div>

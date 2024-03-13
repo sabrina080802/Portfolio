@@ -17,7 +17,7 @@
   },
   {
     "name": "Le Jeu",
-    "description": "Site web qui permet de réunir les fans de jeu video afin de se lancer des tournois ensemble",
+    "description": "Un site web conçu pour rassembler les passionnés de jeux vidéo, facilitant l'organisation et la participation à des tournois collectifs.",
     "tags": ["PHP", "C#", "JavaScript", "HTML", "Projet personnel", "CSS"],
     "git": "https://github.com/sabrina080802/jeu",
     "image": "/photo/LeJeu.webp",

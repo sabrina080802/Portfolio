@@ -20,26 +20,17 @@ export default function Home() {
             À chaque projet, un nouveau défi à surmonter, une nouvelle histoire
             à écrire
           </p>
-          <div className="flex gap-2 flex-wrap">
-            <Link className="btn" href={"/contact-me"}>
-              Me contacter →{" "}
-            </Link>
-            <Link className="btn-type-1" href={"/projets"}>
-              Découvrir mes projets
-            </Link>
+          <div className="flex flex-col">
+            <iframe
+              className="rounded-xl overflow-hidden"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/gALNtmMA1Jw?si=9iObM7Ehh098qkwO"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
           </div>
         </article>
-        <div className="flex flex-col">
-          <h3>Ma vidéo de présentation</h3>
-          <iframe
-            className="rounded-xl overflow-hidden"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/gALNtmMA1Jw?si=9iObM7Ehh098qkwO"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
-        </div>
         <article>
           <h3>Mes expériences</h3>
           <p>
@@ -81,7 +72,7 @@ export default function Home() {
               "Projet personnel",
               "CSS",
             ]}
-            description="Site web qui permet de réunir les fans de jeu video afin de se lancer des tournois ensemble"
+            description="Un site web conçu pour rassembler les passionnés de jeux vidéo, facilitant l'organisation et la participation à des tournois collectifs."
             image="/photo/LeJeu.webp"
             pageLink="/projet/LeJeu"
           />

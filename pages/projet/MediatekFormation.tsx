@@ -41,7 +41,6 @@ export default function MediatekFormation() {
               >
                 Dossier documentaire
               </Link>
-
               <p className="text-justify">
                 Pour mon projet de BTS, j'ai développé une application web
                 nommée MediaTek86. Cette plateforme innovante représente un
@@ -56,7 +55,6 @@ export default function MediatekFormation() {
                 l'utilité des ressources proposées.
               </p>
             </div>
-
             <div className="flex flex-05 flex-col justify-start items-center mt-0">
               <h3 className="text-left">Langage et outils utilisés</h3>
               <p className="w-full m-0">Langages : PHP/TWIG/CSS</p>
@@ -64,6 +62,21 @@ export default function MediatekFormation() {
               <p className="w-full m-0">Framework : Symfony</p>
               <p className="w-full m-0">Authentification : Keycloak</p>
             </div>
+          </div>
+          <div className="flex flex-05 flex-col justify-start">
+            <h3>Mission : </h3>
+            <p className="text-justify">
+              Un développeur avait précédemment élaboré une application destinée
+              à présenter le site "mediatek formation", lequel offre diverses
+              formations à ses membres. Cependant, le chef de projet a identifié
+              plusieurs écarts par rapport aux standards de qualité de codage
+              attendus. De plus, il a remarqué l'absence d'une fonctionnalité
+              spécifiée dans le cahier des charges. Ma première tâche consistait
+              à rectifier ces défauts. Par la suite, d'autres responsabilités
+              m'ont été attribuées, notamment le développement du "back-office".
+              Ces missions supplémentaires visaient à peaufiner et déployer le
+              site web.
+            </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">

@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProjectPage from "@/components/project-page";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Espard() {
   return (
@@ -24,7 +27,6 @@ export default function Espard() {
               Github
             </Link>
             <div>
-              <h3>Objectif :</h3>
               <p>
                 Concevoir une application proposant une initiation à la langue
                 espagnole au travers d’une série d’exercices, articulés autour
@@ -32,6 +34,13 @@ export default function Espard() {
                 trous à compléter - des phrases dans le désordre, à
                 reconstituer.
               </p>
+              <Image
+                src="/photo/Espagnol.webp"
+                width={300}
+                height={300}
+                alt="image"
+                className="rounded-xl m-auto"
+              />
             </div>
           </div>
           <div className="flex flex-05 flex-col justify-start items-center mt-0">
@@ -39,40 +48,43 @@ export default function Espard() {
             <p className="w-full m-0">Langages : .NET/C#</p>
           </div>
         </div>
-        <Image
-          src="/photo/Espagnol.webp"
-          width={300}
-          height={300}
-          alt="image"
-          className="rounded-xl"
-        />
         <p>
           J'ai conçu et développé personnellement tous les éléments visuels à
           l'aide de contrôles utilisateur créés sur mesure, du début à la fin.
           Dans le but de susciter l'envie d'apprendre, j'ai veillé à créer une
           ambiance estivale et accueillante dans la conception de ces visuels.
         </p>
-        <Image
-          src="/photo/Quitter.png"
-          width={300}
-          height={300}
-          alt="image"
-          className="rounded-xl"
-        />
-        <Image
-          src="/photo/Progression.png"
-          width={300}
-          height={300}
-          alt="image"
-          className="rounded-xl"
-        />
-        <Image
-          src="/photo/prochaine.png"
-          width={300}
-          height={300}
-          alt="image"
-          className="rounded-xl"
-        />
+        <Slider
+          dots={true}
+          infinite={true}
+          speed={500}
+          autoplaySpeed={3000}
+          slidesToShow={1}
+          slidesToScroll={1}
+          className="h-400"
+        >
+          <Image
+            src="/photo/Quitter.png"
+            width={300}
+            height={300}
+            alt="image"
+            className="rounded-xl"
+          />
+          <Image
+            src="/photo/Progression.png"
+            width={300}
+            height={300}
+            alt="image"
+            className="rounded-xl"
+          />
+          <Image
+            src="/photo/prochaine.png"
+            width={300}
+            height={300}
+            alt="image"
+            className="rounded-xl"
+          />
+        </Slider>
         <p>
           J'ai pris en charge l'intégralité de la conception visuelle de
           l'application, en élaborant chaque aspect du début à la fin. Par
