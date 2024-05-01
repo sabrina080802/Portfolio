@@ -16,6 +16,14 @@
     "pageLink": "/projet/MediatekFormation"
   },
   {
+    "name": "Mediatek86",
+    "description": "Application Windows qui gére la gestion d'une bibliothéque",
+    "tags": [".NET", "C#", "PHP", "Window Form", "CNED"],
+    "git": "https://github.com/sabrina080802/cnedProjet2",
+    "image": "/photo/Mediatek86.png",
+    "pageLink": "/projet/Mediatek86"
+  },
+  {
     "name": "Le Jeu",
     "description": "Un site web conçu pour rassembler les passionnés de jeux vidéo, facilitant l'organisation et la participation à des tournois collectifs.",
     "tags": ["PHP", "C#", "JavaScript", "HTML", "Projet personnel", "CSS"],

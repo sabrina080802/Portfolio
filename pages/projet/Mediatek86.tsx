@@ -3,80 +3,63 @@ import Image from "next/image";
 import ProjectPage from "@/components/project-page";
 import PDFPreview from "@/components/pdf-preview";
 
-export default function MediatekFormation() {
+export default function Mediatek86() {
   return (
     <>
       <ProjectPage
         project={{
-          image: "/photo/MediatekFormation.png",
-          name: "MediatekFormation",
-          tags: ["PHP", "CSS", "CNED", "TWIG"],
+          image: "/photo/Mediatek86.png",
+          name: "Mediatek86",
+          tags: ["PHP", "C#", "CNED", ".NET", "WindowForm"],
         }}
       >
         <div className="article-container">
           <div className="flex">
             <div className="mr-8 flex-1">
               <div className="flex flex-col gap-4">
-                <h4>Application Web • Déc - Fév 2023/24</h4>
+                <h4>Application Window • Avril - Mai 2024</h4>
               </div>
 
               <Link
-                href="https://github.com/sabrina080802/cnedProjet1"
+                href="https://github.com/sabrina080802/cnedProjet2"
                 className="text-purple-600 hover:text-purple-400 mr-4"
                 target="blank"
               >
                 Github
               </Link>
               <Link
-                href="/photo/cahier_des_charges.pdf"
+                href="/photo/cahier_des_charges_AP3.pdf"
                 download
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
                 Cahier des charges
               </Link>
               <Link
-                href="/photo/dossierDoc.pdf"
+                href="/photo/Doc.pdf"
                 download
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
                 Dossier documentaire
               </Link>
               <p className="text-justify">
-                Pour mon projet de BTS, j'ai développé une application web
-                nommée MediaTek86. Cette plateforme innovante représente un
-                réseau de médiathèques dans la Vienne, offrant un accès à une
-                vaste collection de documents et à divers services numériques
-                via un portail web intuitif. MediaTek86 est dédié à enrichir
-                l'expérience des utilisateurs en intégrant la vidéo à la demande
-                (VOD) et des programmes de formation sur les outils numériques.
-                L'application assure également la gestion technique des
-                médiathèques à travers une équipe spécialisée et le soutien de
-                partenaires stratégiques, visant ainsi à optimiser l'accès et
-                l'utilité des ressources proposées.
+                Pour mon projet de BTS, j'ai développé une application Windows
+                nommée MediaTek86. MediaTek86 est un réseau qui gère les
+                médiathèques de la Vienne, et qui a pour rôle de fédérer les
+                prêts de livres, DVD et CD et de développer la médiathèque
+                numérique pour l’ensemble des médiathèques du département. Je
+                devais travailler sur ce projet en tant que technicienne
+                développeuse junior pour l’ESN InfoTech Services 86 qui vient de
+                remporter le marché pour différentes interventions au sein du
+                réseau MediaTek86, dont certaines dans le domaine du
+                développement d'application.
               </p>
             </div>
             <div className="flex flex-05 flex-col justify-start items-center mt-0">
               <h3 className="text-left">Langage et outils utilisés</h3>
-              <p className="w-full m-0">Langages : PHP/TWIG/CSS</p>
-              <p className="w-full m-0">Serveur : Xampp</p>
-              <p className="w-full m-0">Framework : Symfony</p>
-              <p className="w-full m-0">Authentification : Keycloak</p>
+              <p className="w-full m-0">Langages : PHP/C#/.NET</p>
+              <p className="w-full m-0">Serveur : WampServer</p>
+              <p className="w-full m-0">Framework :Windows Form</p>
             </div>
-          </div>
-          <div className="flex flex-05 flex-col justify-start">
-            <h3>Mission : </h3>
-            <p className="text-justify">
-              Un développeur avait précédemment élaboré une application destinée
-              à présenter le site "mediatek formation", lequel offre diverses
-              formations à ses membres. Cependant, le chef de projet a identifié
-              plusieurs écarts par rapport aux standards de qualité de codage
-              attendus. De plus, il a remarqué l'absence d'une fonctionnalité
-              spécifiée dans le cahier des charges. Ma première tâche consistait
-              à rectifier ces défauts. Par la suite, d'autres responsabilités
-              m'ont été attribuées, notamment le développement du "back-office".
-              Ces missions supplémentaires visaient à peaufiner et déployer le
-              site web.
-            </p>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -96,13 +79,14 @@ export default function MediatekFormation() {
             <div>
               <h4>Bloc 1 : Services informatiques aux organisations</h4>
               <h6> Gérer le patrimoine informatique</h6>
+              <ul> • Recenser et identifier les ressources numériques</ul>
               <ul>
                 • Exploiter des référentiels, normes et standards adoptés par le
                 prestataire informatique.
               </ul>
               <ul>
-                • Vérifier les conditions de la continuité d’un service
-                informatique
+                • Mettre en place et vérifier les niveaux d’habilitation
+                associés à un service
               </ul>
               <ul>• Gérer des sauvegardes </ul>
               <h6>
@@ -111,18 +95,8 @@ export default function MediatekFormation() {
                 d’évolution
               </h6>
               <ul>• Collecter, suivre et orienter des demandes</ul>
-              <ul>
-                {" "}
-                • Traiter des demandes concernant les services réseau et
-                système, applicatifs
-              </ul>
               <ul>• Traiter des demandes concernant les applications</ul>
               <h6>Développer la présence en ligne de l’organisation</h6>
-              <ul>
-                • Participer à la valorisation de l’image de l’organisation sur
-                les médias numériques en tenant compte du cadre juridique et des
-                enjeux économiques
-              </ul>
               <ul>
                 • Participer à l’évolution d’un site Web exploitant les données
                 de l’organisation
@@ -185,35 +159,21 @@ export default function MediatekFormation() {
             <div className="flex overflow-auto mb-2">
               <div className="m-0 flex flex-col justify-start items-center mt-0">
                 <PDFPreview
-                  url="/photo/context.pdf"
+                  url="/photo/contexteMediatek.pdf"
                   downloadable={true}
                   downloadText={"Télécharger le contexte détaillé"}
                 />
               </div>
               <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
                 <PDFPreview
-                  url="/photo/contratDev.pdf"
-                  downloadable={true}
-                  downloadText={"Télécharger le contrat de développement"}
-                />
-              </div>
-              <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
-                <PDFPreview
-                  url="/photo/RapportAP1.pdf"
-                  downloadable={true}
-                  downloadText={"Télécharger le compte-rendu d'activité"}
-                />
-              </div>
-              <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
-                <PDFPreview
-                  url="/photo/pv_recette.pdf"
+                  url="/photo/pvRecette.pdf"
                   downloadable={true}
                   downloadText={"Télécharger le PV de recette"}
                 />
               </div>
               <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
                 <PDFPreview
-                  url="/photo/plan_de_tests.pdf"
+                  url="/photo/planDeTests.pdf"
                   downloadable={true}
                   downloadText={"Télécharger le plan de test"}
                 />
@@ -229,14 +189,14 @@ export default function MediatekFormation() {
                 Documentation
               </Link>
               <Link
-                href="http://mediatekformation.great-site.net"
+                href="http://mediatekformation2.great-site.net"
                 target="blank"
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
                 Accès à l'application en ligne
               </Link>
               <Link
-                href="/photo/Annexe.pdf"
+                href="/photo/AP3.pdf"
                 download
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
