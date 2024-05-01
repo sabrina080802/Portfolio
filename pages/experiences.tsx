@@ -32,6 +32,10 @@ export default function Experiences() {
                   name: "Mediatek Formation",
                   link: "/projet/MediatekFormation",
                 },
+                {
+                  name: "Mediatek86",
+                  link: "/projet/Mediatek86",
+                },
               ],
               description:
                 "Par ailleurs, j'ai également travaillé sur un projet ambitieux en PHP en utilisant le framework Symfony, ce qui m'a confronté au challenge de développer une application complexe tout en maîtrisant les nuances du langage. Le déploiement de ce projet m'a offert une compréhension pratique des environnements de production et des processus de mise en ligne. Cette formation m'a ainsi permis d'acquérir une maîtrise approfondie de nouveaux langages de programmation et de confirmer mon intérêt et mes compétences en backend, me préparant efficacement pour une carrière dans le développement de logiciels.",

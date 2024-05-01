@@ -27,17 +27,7 @@ export default function E4() {
           descriptionlink="Télécharger le compte rendue 2ème année"
           name="Numérize"
         />
-        <div className="mt-24">
-          <h3>Ma vidéo de présentation de GedZilla</h3>
-          <br />
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/zR_iStEf6J0?si=jJqhOhp7aPcEaNh6"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
-        </div>
+
         <div className="mt-24 flex flex-col gap-7 justify-start">
           <h3>Compétences visées : </h3>
           <h5>Bloc 1 : Services informatiques aux organisations</h5>
@@ -124,7 +114,7 @@ export default function E4() {
           </div>
         </div>
 
-        <div className="mt-24">
+        {/* <div className="mt-24">
           <h3>Ma vidéo de présentation</h3>
           <br />
           <iframe
@@ -134,7 +124,7 @@ export default function E4() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </>
   );

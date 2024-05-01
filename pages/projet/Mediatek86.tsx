@@ -28,7 +28,7 @@ export default function Mediatek86() {
                 Github
               </Link>
               <Link
-                href="/photo/cahier_des_charges_AP3.pdf"
+                href="/photo/cahierChargesAP3.pdf"
                 download
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
@@ -63,17 +63,6 @@ export default function Mediatek86() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          {/* <h3>Ma vidéo de présentation</h3>
-            <iframe
-              className="rounded-xl overflow-hidden"
-              width="600"
-              height="337"
-              src="https://www.youtube.com/embed/OchD7-gEDRg?si=_9mqAEll_EBRj2Ai"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
-          </div> */}
-
           <div className="mt-24 flex flex-col gap-7 justify-start">
             <h3>Compétences visées</h3>
             <div>
@@ -85,10 +74,18 @@ export default function Mediatek86() {
                 prestataire informatique.
               </ul>
               <ul>
+                • Vérifier les conditions de la continuité d’un service
+                informatique
+              </ul>
+              <ul>
                 • Mettre en place et vérifier les niveaux d’habilitation
                 associés à un service
               </ul>
               <ul>• Gérer des sauvegardes </ul>
+              <ul>
+                • Vérifier le respect des règles d’utilisation des ressources
+                numériques
+              </ul>
               <h6>
                 {" "}
                 Répondre aux incidents et aux demandes d’assistance et
@@ -101,6 +98,7 @@ export default function Mediatek86() {
                 • Participer à l’évolution d’un site Web exploitant les données
                 de l’organisation
               </ul>
+              <ul>• Traiter des demandes concernant les applications</ul>
               <h6>Travailler en mode projet</h6>
               <ul>
                 • Analyser les objectifs et les modalités d’organisation d’un
@@ -164,6 +162,13 @@ export default function Mediatek86() {
                   downloadText={"Télécharger le contexte détaillé"}
                 />
               </div>
+              <div className="m-0 flex flex-col justify-start items-center mt-0">
+                <PDFPreview
+                  url="/photo/contratDevAP3.pdf"
+                  downloadable={true}
+                  downloadText={"Télécharger le contrat de développeur"}
+                />
+              </div>
               <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
                 <PDFPreview
                   url="/photo/pvRecette.pdf"
@@ -189,11 +194,11 @@ export default function Mediatek86() {
                 Documentation
               </Link>
               <Link
-                href="http://mediatekformation2.great-site.net"
+                href="http://mediatek-document.rf.gd"
                 target="blank"
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
-                Accès à l'application en ligne
+                Accès à l'api en ligne
               </Link>
               <Link
                 href="/photo/AP3.pdf"
