@@ -211,7 +211,7 @@ export default function Mediatek86() {
                 Documentation
               </Link>
               <Link
-                href="http://mediatek-document.rf.gd"
+                href="http://mediatek-document.great-site.net/"
                 target="blank"
                 className="text-purple-600 hover:text-purple-400 mr-4"
               >
