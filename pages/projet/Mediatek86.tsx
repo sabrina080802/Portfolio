@@ -61,6 +61,16 @@ export default function Mediatek86() {
               <p className="w-full m-0">Framework :Windows Form</p>
             </div>
           </div>
+          <div className="flex flex-col items-center justify-center">
+            <h3>Ma vidéo de présentation</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/n0bf672eddk?si=6QkoppaPGpIB7ZZs"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="mt-24 flex flex-col gap-7 justify-start">
@@ -171,14 +181,21 @@ export default function Mediatek86() {
               </div>
               <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
                 <PDFPreview
-                  url="/photo/pvRecette.pdf"
+                  url="/photo/RapportAP3.pdf"
+                  downloadable={true}
+                  downloadText={"Télécharger le compte-rendu d'activité"}
+                />
+              </div>
+              <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
+                <PDFPreview
+                  url="/photo/pv_recette_AP3.pdf"
                   downloadable={true}
                   downloadText={"Télécharger le PV de recette"}
                 />
               </div>
               <div className="m-0 flex flex-1 flex-col justify-start items-center mt-0">
                 <PDFPreview
-                  url="/photo/planDeTests.pdf"
+                  url="/photo/plan_de_tests_AP3.pdf"
                   downloadable={true}
                   downloadText={"Télécharger le plan de test"}
                 />
