@@ -21,7 +21,7 @@ export default function Mediatek86() {
               </div>
 
               <Link
-                href="https://github.com/sabrina080802/cnedProjet2"
+                href="https://github.com/sabrina080802/cnedprojet2"
                 className="text-purple-600 hover:text-purple-400 mr-4"
                 target="blank"
               >
